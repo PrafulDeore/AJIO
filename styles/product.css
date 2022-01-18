@@ -1,3 +1,7 @@
+@import url('http://fonts.cdnfonts.com/css/lora');
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
 #main_area{
     display: flex;
     border: 1px solid red;
@@ -7,14 +11,24 @@
 }
 #functionalty{
     width: 22%;
+    padding: 10px;
     /* flex:1; */
 border: 1px solid rgb(8, 13, 68);
 }
+
+/* product_div css  */
+
 #products_div{
     width: 78%;
     /* flex:3; */
     border: 1px solid rgb(59, 201, 59);
 }
+   #products_div>h1{
+       padding: 20px 0px;
+        text-align: center;
+        font-family: 'Lora', sans-serif;
+        font-weight: normal;
+    }
 #sorting{
     display: flex;
     justify-content: space-between;
@@ -25,6 +39,15 @@ border: 1px solid rgb(8, 13, 68);
     background-color: #f9f9f9;
     padding: 10px ;
     
+}
+#sorting span{
+    margin-right: 10px;
+    color: lightgray;
+}
+#sorting_function{
+    font-size: 10px;
+    padding: 4px 25px 4px 2px;
+    font-weight: 600;
 }
 #total_items{
     margin-left: 40px;
@@ -57,6 +80,7 @@ border: 1px solid rgb(8, 13, 68);
         grid-gap: 40px 20px;
         /* align-items: center; */
     }
+ 
     #products>div{
         position: relative;
         display: flex;
@@ -116,4 +140,36 @@ border: 1px solid rgb(8, 13, 68);
     display: block;
     cursor: pointer;
 
+}
+/* functionalty div css  */
+
+
+#heading{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#heading>p{
+font-family: 'Lora', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cate,.pri,.brand,.discount{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+.cate_check,#price,#brands,#discounts{
+    margin-left: 25px;
+}
+#filters i{
+    cursor: pointer;
+}
+#cate_gry_hide,#hide_prices,#hide_brand,#hide_discount{
+    display: none;
+}
+#categories,#price,#brands,#discounts{
+    display: none;
 }
