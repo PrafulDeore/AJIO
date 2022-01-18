@@ -1,0 +1,119 @@
+#main_area{
+    display: flex;
+    border: 1px solid red;
+    /* height: 100vh; */
+    
+    /* grid-template-columns: repeat(2,); */
+}
+#functionalty{
+    width: 22%;
+    /* flex:1; */
+border: 1px solid rgb(8, 13, 68);
+}
+#products_div{
+    width: 78%;
+    /* flex:3; */
+    border: 1px solid rgb(59, 201, 59);
+}
+#sorting{
+    display: flex;
+    justify-content: space-between;
+   width: 92%;
+    border-top: 1px solid gray;
+    align-items: center;
+    border-bottom:1px solid gray ;
+    background-color: #f9f9f9;
+    padding: 10px ;
+    
+}
+#total_items{
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 14px;
+}
+#grid>p{
+    margin-right: 10px;
+}
+#grid,#grid>div{
+    display: flex;
+    align-items: center;
+
+   
+}
+#grid>div{
+     border: 1px solid gray;
+}
+#grid>div>div{
+    width: 6px;
+    height: 15px;
+    margin: 3px;
+    background-color: lightgray;
+}
+
+ #products {
+     margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        grid-gap: 40px 20px;
+        /* align-items: center; */
+    }
+    #products>div{
+        position: relative;
+        display: flex;
+    flex-direction: column;
+ align-items: center;
+    }
+       /* #products>div>div>p{
+           margin-right:4px ;
+       } */
+#products img{
+    width: 100%;
+}
+#products>div>h6{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color:#b59e7c;
+    font-weight: 600;
+    font-size: 13px;
+}
+#products p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 13px;
+    text-align: center;
+}
+.prices{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+.img_div{
+    position: relative;
+}
+.prices>p:nth-child(1){
+    font-weight: bold;
+}
+.prices>p:nth-child(2){
+    text-decoration:line-through;
+}
+.prices>p:nth-child(3){
+    color: #b59e7c;
+}
+#quickview{
+    position: absolute;
+   bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color:black;
+    width: 100%;
+    font-weight: bold;
+    padding: 10px 0px;
+    text-align: center;
+    /* visibility: hidden; */
+    display: none;
+}
+#products>div:hover #quickview{
+    /* visibility: visible; */
+    display: block;
+    cursor: pointer;
+
+}
