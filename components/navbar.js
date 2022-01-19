@@ -1,15 +1,161 @@
 function navbar() {
-  return `<div id="navbar">
-  <div id="rightNav">
+  return `<div id="forSignup">
+  <div id="loginClose">
     <img
-      src="https://1000logos.net/wp-content/uploads/2020/07/Ajio-Logo1.jpg"
+      id="crossImg"
+      src="https://cdn-icons.flaticon.com/png/512/2976/premium/2976286.png?token=exp=1642570065~hmac=dc4ca94997963892efc8afa9c8b22b96"
       alt=""
-      id="ajioLogo"
     />
+  </div>
+  <div id="forsignUpDetails">
+    <h2>Welcome to AJIO</h2>
+    <p>Join/Sign In using</p>
+    <div id="googleFb">
+      <div id="forFb">
+        <div id="imageOfFb">
+          <img
+            src="https://www.freepnglogos.com/uploads/facebook-logo-13.png"
+            alt=""
+          />
+        </div>
+        <div id="textFb"><p>FACEBOOK</p></div>
+      </div>
+      <div id="forGoogle">
+        <div id="imageOfGoogle">
+          <img
+            src="https://logo-logos.com/wp-content/uploads/2016/11/Google_icon_logo.png"
+            alt=""
+          />
+        </div>
+        <div id="textGoogle"><p>GOOGLE</p></div>
+      </div>
+    </div>
+
+    
+    <div id="forOr">
+      <hr />
+      <p>Or</p>
+      <hr />
+    </div>
+
+   
+    <p>Enter Mobile Number / Email*</p>
+
+    <input type="text" name="" id="forInput" />
+    <button id="forSignUpbtn">CONTINUE</button>
+    <p id="tAndC">
+      By Signing in,I agree to
+      <a id="tandc" href="https://www.ajio.com/help/termsAndCondition"
+        >Terms and Conditions</a
+      >
+    </p>
+  </div>
+</div>
+
+
+<div id="forSignup1">
+  <div id="loginClose1">
+    <img
+      id="crossImg1"
+      src="https://cdn-icons.flaticon.com/png/512/2976/premium/2976286.png?token=exp=1642570065~hmac=dc4ca94997963892efc8afa9c8b22b96"
+      alt=""
+    />
+  </div>
+  <div id="forsignUpDetails1">
+    <h2>Welcome to AJIO</h2>
+    <p>Join/Sign In using</p>
+    <div id="googleFb1">
+      <div id="forFb1">
+        <div id="imageOfFb1">
+          <img
+            src="https://www.freepnglogos.com/uploads/facebook-logo-13.png"
+            alt=""
+          />
+        </div>
+        <div id="textFb1"><p>FACEBOOK</p></div>
+      </div>
+      <div id="forGoogle1">
+        <div id="imageOfGoogle1">
+          <img
+            src="https://logo-logos.com/wp-content/uploads/2016/11/Google_icon_logo.png"
+            alt=""
+          />
+        </div>
+        <div id="textGoogle1"><p>GOOGLE</p></div>
+      </div>
+    </div>
+
+    
+    <div id="forOr1">
+      <hr />
+      <p>Or</p>
+      <hr />
+    </div>
+
+    <p>Please set up your account</p>
+    <p id="todisplayNum"></p>
+
+    <div id="forGender">
+      <div id="genderCheck"><p>Gender :</p></div>
+      <div id="forRadio">
+        <label for="">Male</label>
+        <input type="radio" name="" id="forRadioM" />
+        <label for="">Female</label>
+        <input type="radio" name="" id="forRadiof" />
+      </div>
+    </div>
+    <input type="text" name="" id="forInputName" placeholder="Name" />
+    <input type="email" name="" id="forInputEmail" placeholder="Email" />
+    <input
+      type="password"
+      name=""
+      id="forPassword"
+      placeholder="Password"
+    />
+    <input
+      type="text"
+      name=""
+      id="optionalF"
+      placeholder="Invite Code (optional)"
+    />
+    <p id="tAndC1">
+      By Signing in,I agree to
+      <a id="tandc1" href="https://www.ajio.com/help/termsAndCondition"
+        >Terms and Conditions</a
+      >
+    </p>
+    <button id="sendOtp">SEND OTP</button>
+  </div>
+</div>
+
+<div id="forSignup2">
+  <div id="loginClose2">
+    <img
+      id="crossImg2"
+      src="https://cdn-icons.flaticon.com/png/512/2976/premium/2976286.png?token=exp=1642570065~hmac=dc4ca94997963892efc8afa9c8b22b96"
+      alt=""
+    />
+  </div>
+  <p id="forVerfication">Number Verfication</p>
+  <p>Please Enter OTP Sent To</p>
+  <p id="forNumFromLocal"></p>
+  <input type="text" name="" id="forOtp" placeholder="Enter OTP" />
+  <button id="confirmOTP">SEND OTP</button>
+</div>
+
+<div id="navbar">
+  <div id="rightNav">
+    <a href=""
+      ><img
+        src="https://1000logos.net/wp-content/uploads/2020/07/Ajio-Logo1.jpg"
+        alt=""
+        id="ajioLogo"
+    /></a>
   </div>
   <div id="leftNav">
     <div id="navSign-In">
-      <p><a href="">Sign In / Join AJIO </a></p>
+      <p id="displayCxName"></p>
+      <p id="signInJoin">Sign In / Join AJIO</p>
       <p><a href="">Customer Care</a></p>
       <div id="visitajio">
         <p><a href="">Visit AJIOLUXE</a></p>
@@ -48,7 +194,6 @@ function navbar() {
     </div>
   </div>
 </div>
-
 
 <div class="onHoverOver" id="toDisplaymen1">
   <div class="hoverOverCategory">
@@ -187,8 +332,6 @@ function navbar() {
   </div>
 </div>
 
-
-
 <div class="onHoverOver" id="toDisplaykids1">
   <div class="hoverOverCategory">
     <p>Shop By :</p>
@@ -258,7 +401,6 @@ function navbar() {
   </div>
 </div>
 
-
 <div class="onHoverOver" id="indie1">
   <div class="hoverOverCategory">
     <p>Shop By :</p>
@@ -327,8 +469,6 @@ function navbar() {
     </div>
   </div>
 </div>
-
-
 
 <div class="onHoverOver" id="handm1">
   <div class="hoverOverCategory">
@@ -427,6 +567,7 @@ function navbar() {
   <div>
     <a href=""><p>Sneaker</p></a>
   </div>
-</div>`;
+</div>
+`;
 }
-// export default navbar;
+export default navbar;

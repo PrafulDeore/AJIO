@@ -1,9 +1,21 @@
 body {
   margin: 0px;
 }
+/* hover over............. */
+#navSec > p:hover {
+  cursor: pointer;
+}
 
+#navSec > p {
+  font-size: 15px;
+}
+#signInJoin:hover {
+  cursor: pointer;
+}
+
+/* hover over */
 #navbar {
-  border: 1px solid red;
+  /* border: 1px solid red;  */
   height: 95px;
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -12,12 +24,12 @@ body {
   width: 30%;
   height: 100%;
   width: 30%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 #leftNav {
   width: 70%;
   height: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 #ajioLogo {
   height: 90%;
@@ -26,7 +38,7 @@ body {
 #navSign-In {
   height: 47%;
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   gap: 4%;
   justify-content: end;
@@ -34,7 +46,7 @@ body {
 #navSec {
   width: 100%;
   height: 47%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   gap: 3%;
 }
@@ -52,7 +64,7 @@ body {
 }
 #sign-in-ajio,
 #bag-nav-ajio {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 5%;
   border-radius: 50px;
   align-items: center;
@@ -69,6 +81,7 @@ body {
   height: 70%;
   margin-top: 0.5%;
   font-weight: normal;
+  background-color: #fffded;
 }
 #visitajio > p > a {
   text-decoration: none;
@@ -78,7 +91,7 @@ body {
 /* to hover over  */
 
 #body {
-  border: 4px solid green;
+  /* border: 4px solid green; */
   height: 600px;
 }
 
@@ -95,7 +108,7 @@ body {
   gap: 1%;
   width: 100%;
   height: 10%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 .categoryajio,
 .brandajio {
@@ -169,11 +182,13 @@ p {
   font-family: "Source Sans Pro", sans-serif;
 }
 /* SIGNING UP */
-#forSignup {
+#forSignup,
+#forSignup1,
+#forSignup2 {
   width: 28%;
-  border: 1px solid teal;
+  /* border: 1px solid teal; */
   position: absolute;
-  height: 650px;
+  height: 780px;
   margin-left: 36%;
   margin-top: 3%;
   background-color: white;
@@ -181,22 +196,31 @@ p {
   font-weight: normal;
 }
 
-#loginClose {
-  border: 1px solid red;
+/* ........... */
+
+/* ................ */
+
+#loginClose,
+#loginClose1,
+#loginClose2 {
+  /* border: 1px solid red; */
   height: 16px;
   width: 4%;
   cursor: pointer;
   margin-left: 93%;
   margin-top: 3%;
 }
-#crossImg {
+#crossImg,
+#crossImg1,
+#crossImg2 {
   height: 100%;
   width: 100%;
 }
-#forsignUpDetails {
+#forsignUpDetails,
+#forsignUpDetails1 {
   width: 90%;
   margin: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-top: 10%;
 }
 h2 {
@@ -205,21 +229,24 @@ h2 {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-#googleFb {
+#googleFb,
+#googleFb1 {
   width: 100%;
   /* border: 1px solid green; */
   height: 50px;
   display: flex;
   justify-content: space-between;
 }
-#forFb {
+#forFb,
+#forFb1 {
   width: 47%;
   height: 100%;
   border: 2px solid #485995;
   display: flex;
   justify-content: space-between;
 }
-#forGoogle {
+#forGoogle,
+#forGoogle1 {
   width: 47%;
   height: 100%;
   border: 2px solid red;
@@ -228,13 +255,16 @@ h2 {
 }
 
 #imageOfFb,
-#imageOfGoogle {
+#imageOfFb1 #imageOfGoogle,
+#imageOfGoogle1 {
   margin-top: 0%;
   height: 100%;
   width: 20%;
 }
 #forFb > div > img,
-#forGoogle > div > img {
+#forFb1 > div > img,
+#forGoogle > div > img,
+#forGoogle1 > div > img {
   padding-left: 90%;
   padding-top: 30%;
   height: 60%;
@@ -242,7 +272,9 @@ h2 {
 }
 /*  */
 #textFb,
-#textGoogle {
+#textFb1,
+#textGoogle,
+#textGoogle1 {
   display: flex;
   /* border: 1px solid teal; */
   height: 100%;
@@ -253,13 +285,15 @@ h2 {
   align-items: center;
   color: blue;
 }
-#textGoogle {
+#textGoogle,
+#textGoogle1 {
   color: red;
 }
 
 /* FOR THE OR PART */
 
-#forOr {
+#forOr,
+#forOr1 {
   display: flex;
   width: 60%;
   align-items: center;
@@ -270,13 +304,19 @@ hr {
 }
 /* FOR INPUT */
 
-#forInput {
+#forInput,
+#forInputName,
+#forInputEmail,
+#forPassword,
+#optionalF,
+#forOtp {
   width: 97%;
   height: 40px;
-  border-bottom-color: #f6f6f6;
+  border-bottom-color: grey;
   border-top: none;
   border-left: none;
   border-right: none;
+  outline: none;
 }
 /* FOR BUTTON */
 #forSignUpbtn {
@@ -290,13 +330,59 @@ hr {
   border: none;
 }
 /* TERMS AND CONDITIONS */
-#tAndC {
+#tAndC,
+#tAndC1 {
   font-size: 15px;
   color: grey;
 }
-#tandc {
+#tandc,
+#tandc1 {
   text-decoration: none;
 }
-#signInJoin:hover {
+#navSign-In > p :hover {
   cursor: pointer;
+}
+/* entering details */
+#forGender {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+#genderCheck {
+  /* border: 1px solid red; */
+  font-size: 20px;
+}
+#forRadio {
+  display: flex;
+  /* border: 1px solid black; */
+  margin-top: 6%;
+  margin-left: 3%;
+  width: 50%;
+  font-size: 20px;
+  justify-content: space-between;
+}
+/* INPUT */
+#forInputName,
+#forInputEmail,
+#forPassword,
+#optionalF,
+#forOtp {
+  width: 97%;
+  margin-top: 3%;
+  height: 35px;
+}
+#sendOtp,
+#confirmOTP {
+  margin-top: 7%;
+  font-size: 17px;
+  padding: 3%;
+  width: 50%;
+  font-weight: normal;
+  background-color: #d5a249;
+  color: white;
+  border: none;
+}
+#forVerfication {
+  font-size: 25px;
 }
