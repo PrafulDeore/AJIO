@@ -37,13 +37,13 @@
                     </div>
                     <div id="categories">
                         <div class='cate_check'>
-                            <input type="checkbox" name="" id=""> T-Shirts
+                            <input onclick="myfilter()" type="checkbox" name="" id="tshirt"> T-Shirts
                         </div>
                         <div class='cate_check'>
-                            <input type="checkbox" name="" id=""> Jackets
+                            <input onclick="myfilter()" type="checkbox" name="" id="jacket"> Jackets
                         </div>
                         <div class='cate_check'>
-                            <input type="checkbox" name="" id=""> Pants
+                            <input type="checkbox" name="" id="pant"> Pants
                         </div>
                     </div>
 
@@ -58,17 +58,17 @@
                     </div>
                     <div id="price">
                         <div>
-                            <input type="checkbox" name="" id=""> Below Rs. 500
+                            <input type="checkbox" name="" id="r500"> Below Rs. 500
 
                         </div>
                         <div>
-                            <input type="checkbox" name="" id=""> Below Rs. 500-1000
+                            <input type="checkbox" name="" id="r1000"> Below Rs. 500-1000
                         </div>
                         <div>
-                            <input type="checkbox" name="" id=""> Below Rs. 1000-1500
+                            <input type="checkbox" name="" id="r1500"> Below Rs. 1000-1500
                         </div>
                         <div>
-                            <input type="checkbox" name="" id=""> Below Rs. 1500-2000
+                            <input type="checkbox" name="" id="r2000"> Below Rs. 1500-2000
                         </div>
 
                     </div>
@@ -82,20 +82,20 @@
                     </div>
                     <div id="brands">
                         <div>
-                            <input type="checkbox" name="" id=""> Jack & Jones
+                            <input type="checkbox" name="" id="jack"> Jack & Jones
 
                         </div>
                         <div>
-                            <input type="checkbox" name="" id=""> Nicks
+                            <input type="checkbox" name="" id="nicks"> Nicks
                         </div>
                         <div>
-                            <input type="checkbox" name="" id=""> NETPLAY
+                            <input type="checkbox" name="" id="netplay"> NETPLAY
                         </div>
                         <div>
-                            <input type="checkbox" name="" id=""> LEVIS
+                            <input type="checkbox" name="" id="levis"> LEVIS
                         </div>
                         <div>
-                            <input type="checkbox" name="" id=""> Mpl Sports
+                            <input type="checkbox" name="" id="mpl"> Mpl Sports
                         </div>
                     </div>
 
@@ -109,18 +109,18 @@
                     </div>
                     <div id="discounts">
                         <div>
-                            <input type="checkbox" name="" id=""> 0-20%
+                            <input type="checkbox" name="" id="d20"> 0-20%
 
                         </div>
                         <div>
-                            <input type="checkbox" name="" id=""> 21-40%
+                            <input type="checkbox" name="" id="d40"> 21-40%
 
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">41-60%
+                            <input type="checkbox" name="" id="d60">41-60%
                         </div>
                         <div>
-                            <input type="checkbox" name="" id=""> 61-80%
+                            <input type="checkbox" name="" id="d80"> 61-80%
                         </div>
                     </div>
 
@@ -285,6 +285,7 @@
 
 
     ]
+
     display(products)
     document.getElementById('total_items').innerHTML = `${products.length} Items Found`;
     function display(products) {
@@ -440,7 +441,41 @@
     }
 
 
+    function myfilter() {
+        let tshirt = document.getElementById('tshirt').checked;
+        let jacket = document.getElementById('jacket').checked;
 
+        if (tshirt == true) {
+            let filter_pro = [];
+            products.filter((ele) => {
+                if (ele.type == "T-Shirt") {
+                    filter_pro.push(ele);
+                }
+            })
+            display(filter_pro);
+        }
+        if (jacket == true) {
+            let filter_pro = [];
+            products.filter((ele) => {
+                if (ele.type == "Jacket") {
+                    filter_pro.push(ele);
+                }
+            })
+            display(filter_pro);
+        }
+
+
+
+        else {
+            display(products)
+        }
+
+
+        // console.log(filter_pro);
+
+        console.log(tshirt)
+
+    }
     console.log(products);
 
 
