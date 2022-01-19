@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div id="navbar"></div>
+    <div id="main_area">
+        <div id="functionalty">
+
+            <div id="heading">
+                <p>Refine By</p>
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            <div id="filters">
+                <div>
+                    <div class='cate'>
+
+                        <i id="cate_gry_show" class="fas fa-plus"></i>
+                        <i id="cate_gry_hide" class="fas fa-minus"></i>
+                        <p>Categories</p>
+                    </div>
+                    <div id="categories">
+                        <div class='cate_check'>
+                            <input type="checkbox" name="" id=""> T-Shirts
+                        </div>
+                        <div class='cate_check'>
+                            <input type="checkbox" name="" id=""> Jackets
+                        </div>
+                        <div class='cate_check'>
+                            <input type="checkbox" name="" id=""> Pants
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div>
+                    <div class="pri">
+                        <i id="hide_prices" class="fas fa-minus"></i>
+                        <i id="show_prices" class="fas fa-plus"></i>
+                        <p>Prices</p>
+                    </div>
+                    <div id="price">
+                        <div>
+                            <input type="checkbox" name="" id=""> Below Rs. 500
+
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id=""> Below Rs. 500-1000
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id=""> Below Rs. 1000-1500
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id=""> Below Rs. 1500-2000
+                        </div>
+
+                    </div>
+
+                </div>
+                <div>
+                    <div class="brand">
+                        <i id="hide_brand" class="fas fa-minus"></i>
+                        <i id="show_brand" class="fas fa-plus"></i>
+                        <p>Brands</p>
+                    </div>
+                    <div id="brands">
+                        <div>
+                            <input type="checkbox" name="" id=""> Jack & Jones
+
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id=""> Nicks
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id=""> NETPLAY
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id=""> LEVIS
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id=""> Mpl Sports
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="discount">
+                        <i id="hide_discount" class="fas fa-minus"></i>
+                        <i id="show_discount" class="fas fa-plus"></i>
+
+                        <p>Discount</p>
+                    </div>
+                    <div id="discounts">
+                        <div>
+                            <input type="checkbox" name="" id=""> 0-20%
+
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id=""> 21-40%
+
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">41-60%
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id=""> 61-80%
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div id="products_div">
+            <h1>Clothing</h1>
+            <div id="sorting">
+                <div id="total_items">Iteams</div>
+                <div id="grid">
+                    <p>
+                        GRID
+                    </p>
+
+                    <div id="grid_3">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="grid_4">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+
+
+                    </div>
+                </div>
+
+                <div>
+                    <span>SORT BY</span>
+                    <select name="" id="sorting_function" onchange="displaysorted()">
+                        <option value="">Sort Products</option>
+                        <option value="low">Low to High</option>
+                        <option value="High">High to low</option>
+                    </select>
+                </div>
+            </div>
+            <div id="products">
+
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+
+    </div>
+
+</body>
+
+
+
+
+
+</html>
+<script>
+
+    products = [
+        {
+            image: {
+                img1: "https://assets.ajio.com/medias/sys_master/root/20211115/cBXP/61927ce4aeb2690110c4958c/-1117Wx1400H-460982469-red-MODEL.jpg",
+                img2: "https://assets.ajio.com/medias/sys_master/root/20211115/8GgO/6192827eaeb2690110c4b1cc/-1117Wx1400H-460982469-red-MODEL2.jpg",
+                img3: "https://assets.ajio.com/medias/sys_master/root/20211115/tTEn/61927a9baeb2690110c48b4e/-1117Wx1400H-460982469-red-MODEL3.jpg"
+
+            },
+            name: "Product By Jack & Jones",
+            details: "Quilted Jacket with Zipper Pockets",
+            main_price: 3499,
+            discount_price: 1924,
+            offer_price: 1575,
+            discount: 45,
+            type: "Jacket",
+
+        },
+
+        {
+            image: {
+                img1: "https://assets.ajio.com/medias/sys_master/root/20211228/Kk50/61ca0750f997ddf8f1630d62/-1117Wx1400H-469047349-blue-MODEL.jpg",
+                img2: "https://assets.ajio.com/medias/sys_master/root/20211228/4LcF/61ca3706aeb26901101f785a/-1117Wx1400H-469047349-blue-MODEL2.jpg",
+                img3: "https://assets.ajio.com/medias/sys_master/root/20211228/cfJj/61ca2f18aeb26901101f1709/-1117Wx1400H-469047349-blue-MODEL3.jpg"
+            },
+            name: "Product By Jack & Jones",
+            details: "Urban Pro Panelled Washed Jacket",
+            main_price: 2799,
+            discount_price: 1400,
+            offer_price: 1260,
+            discount: 50,
+            type: "Jacket",
+        },
+        {
+            image: {
+                img1: "https://assets.ajio.com/medias/sys_master/root/20211223/EyoW/61c370b7aeb2690110178ca6/-1117Wx1400H-469038395-green-MODEL.jpg",
+                img2: "https://assets.ajio.com/medias/sys_master/root/20211223/lnbv/61c373c6aeb2690110179642/-1117Wx1400H-469038395-green-MODEL2.jpg",
+                img3: "https://assets.ajio.com/medias/sys_master/root/20211223/5nm4/61c36fb6aeb26901101789ac/-1117Wx1400H-469038395-green-MODEL3.jpg"
+            },
+            name: "Nike",
+            details: "Geometric Self-Print Crew-Neck T-shirt",
+            main_price: 2495,
+            discount_price: 1996,
+            offer_price: 1622,
+            discount: 20,
+            type: "T-Shirt",
+        },
+        {
+            image: {
+                img1: "https://assets.ajio.com/medias/sys_master/root/20211103/cm56/61819c8caeb2690110b7aea1/-1117Wx1400H-441126481-blue-MODEL.jpg",
+                img2: "https://assets.ajio.com/medias/sys_master/root/20211103/DT5w/618184b4aeb2690110b74416/-1117Wx1400H-441126481-blue-MODEL2.jpg",
+                img3: "https://assets.ajio.com/medias/sys_master/root/20211103/EyMw/6181893aaeb2690110b7532d/-1117Wx1400H-441126481-blue-MODEL3.jpg"
+            },
+            name: "NETPLAY",
+            details: "Art Deco Print High-Neck Zip-Front Sweatshirt with Insert Pockets",
+            main_price: 1499,
+            discount_price: 899,
+            offer_price: 898,
+            discount: 40,
+            type: "T-Shirt",
+        },
+        {
+            image: {
+                img1: "https://assets.ajio.com/medias/sys_master/root/20211208/I1j8/61aff282f997ddf8f14624ac/-1117Wx1400H-469057915-black-MODEL.jpg",
+                img2: "https://assets.ajio.com/medias/sys_master/root/20211208/6afO/61afbea6aeb2690110ffa430/-1117Wx1400H-469057915-black-MODEL4.jpg",
+                img3: "https://assets.ajio.com/medias/sys_master/root/20211208/rJQd/61affb24f997ddf8f146a3d9/-1117Wx1400H-469057915-black-MODEL2.jpg"
+            },
+            name: "NETPLAY",
+            details: "Zip-Front Slim Fit Biker Jacket",
+            main_price: 5099,
+            discount_price: 1530,
+            offer_price: 1479,
+            discount: 70,
+            type: "Jacket",
+        },
+        {
+            image: {
+                img1: "https://assets.ajio.com/medias/sys_master/root/20211112/YnUW/618e8e36f997ddf8f1039042/-1117Wx1400H-460971297-black-MODEL.jpg",
+                img2: "https://assets.ajio.com/medias/sys_master/root/20211112/gsb1/618e91e1f997ddf8f1039e33/-1117Wx1400H-460971297-black-MODEL2.jpg",
+                img3: "https://assets.ajio.com/medias/sys_master/root/20211112/poYi/618e83f8f997ddf8f10353f9/-1117Wx1400H-460971297-black-MODEL3.jpg"
+            },
+            name: "LEVIS",
+            details: "Mid-Rise Slim Fit Jeans",
+            main_price: 2999,
+            discount_price: 1649,
+            offer_price: 1500,
+            discount: 45,
+            type: "pant",
+        },
+        {
+            image: {
+                img1: "https://assets.ajio.com/medias/sys_master/root/20211202/gXWj/61a8e073f997ddf8f12e170f/-1117Wx1400H-469043836-black-MODEL.jpg",
+                img2: "https://assets.ajio.com/medias/sys_master/root/20211202/UodB/61a8e1fcf997ddf8f12e2055/-1117Wx1400H-469043836-black-MODEL3.jpg",
+                img3: "https://assets.ajio.com/medias/sys_master/root/20211202/HLE0/61a8e1eef997ddf8f12e1f9b/-1117Wx1400H-469043836-black-MODEL5.jpg"
+            },
+            name: "Mpl Sports",
+            details: "Straight Trackpants with Insert Pockets",
+            main_price: 2299,
+            discount_price: 1379,
+            offer_price: "",
+            discount: 40,
+            type: "pant",
+        }
+
+
+    ]
+    display(products)
+    document.getElementById('total_items').innerHTML = `${products.length} Items Found`;
+    function display(products) {
+        document.getElementById('products').innerHTML = null;
+        products.map((ele) => {
+            let div_quick = document.createElement('div')
+            let div_img = document.createElement('div');
+            div_img.setAttribute('class', 'img_div')
+
+            div_quick.setAttribute('id', 'quickview');
+            div_quick.innerHTML = "Quick View";
+
+
+            let div = document.createElement('div');
+            let price_div = document.createElement('div');
+            price_div.setAttribute("class", 'prices')
+            let img = document.createElement('img');
+            img.src = ele.image.img1;
+            let brand = document.createElement('h6');
+            brand.innerHTML = ele.name;
+            let detail = document.createElement('p');
+            detail.innerHTML = ele.details;
+            let price_main = document.createElement('p');
+            price_main.innerHTML = `Rs. ${ele.main_price}`;
+            let price_discount = document.createElement('p');
+            price_discount.innerHTML = `Rs. ${ele.discount_price}`;
+            let price_offer = document.createElement('p');
+
+            let dis = document.createElement('p');
+            dis.innerHTML = `(${ele.discount}% off)`;
+            div_img.append(img, div_quick);
+            let offer = ele.offer_price;
+
+            price_offer.innerHTML = `Offer Price: <span style="color:#75cb7f">Rs. ${ele.offer_price}</span>`;
+
+            price_div.append(price_discount, price_main, dis);
+
+            // localStorage------------------------------------------------------------------------->
+            div.onclick = () => {
+                localStorage.setItem('productdb', JSON.stringify(ele));
+                window.location.href = "specific_product.html"
+            }
+            if (offer == "") {
+                div.append(div_img, brand, detail, price_div);
+            } else {
+                div.append(div_img, brand, detail, price_div, price_offer);
+            }
+
+            document.getElementById('products').append(div);
+
+
+
+
+        })
+    }
+    function displaysorted() {
+        document.getElementById('products').innerHTML = "";
+        let sortValue = document.querySelector("#sorting_function").value;
+        let sortedarr = products;
+        if (sortValue == "low") {
+            sortedarr = sortedarr.sort(function (a, b) {
+                return Number(a.discount_price) - Number(b.discount_price);
+            });
+
+            display(sortedarr);
+        }
+        else if (sortValue == "High") {
+            sortedarr = sortedarr.sort(function (a, b) {
+                return Number(b.discount_price) - Number(a.discount_price);
+            });
+            display(sortedarr);
+        }
+        else if (sortValue == "") {
+            display(products)
+        }
+    }
+    // categories hide/show function 
+    document.getElementById('cate_gry_show').onclick = () => {
+        document.getElementById('cate_gry_show').style.display = "none"
+        document.getElementById('categories').style.display = "block"
+        document.getElementById('cate_gry_hide').style.display = "block"
+
+
+    }
+    document.getElementById('cate_gry_hide').onclick = () => {
+        document.getElementById('cate_gry_show').style.display = "block"
+        document.getElementById('categories').style.display = "none"
+        document.getElementById('cate_gry_hide').style.display = "none"
+
+
+    }
+
+    // price hide show function
+    document.getElementById('show_prices').onclick = () => {
+        document.getElementById('show_prices').style.display = "none"
+        document.getElementById('price').style.display = "block"
+        document.getElementById('hide_prices').style.display = "block"
+
+
+    }
+    document.getElementById('hide_prices').onclick = () => {
+        document.getElementById('show_prices').style.display = "block"
+        document.getElementById('price').style.display = "none"
+        document.getElementById('hide_prices').style.display = "none"
+
+
+    }
+    // brand hide show function 
+    document.getElementById('show_brand').onclick = () => {
+        document.getElementById('show_brand').style.display = "none"
+        document.getElementById('brands').style.display = "block"
+        document.getElementById('hide_brand').style.display = "block"
+
+
+    }
+    document.getElementById('hide_brand').onclick = () => {
+        document.getElementById('show_brand').style.display = "block"
+        document.getElementById('brands').style.display = "none"
+        document.getElementById('hide_brand').style.display = "none"
+
+
+    }
+
+    // discount hide show function 
+    document.getElementById('show_discount').onclick = () => {
+        document.getElementById('show_discount').style.display = "none"
+        document.getElementById('discounts').style.display = "block"
+        document.getElementById('hide_discount').style.display = "block"
+
+
+    }
+    document.getElementById('hide_discount').onclick = () => {
+        document.getElementById('show_discount').style.display = "block"
+        document.getElementById('discounts').style.display = "none"
+        document.getElementById('hide_discount').style.display = "none"
+
+
+    }
+    //grid function show 4 cards
+
+
+    document.getElementById('grid_4').onclick = () => {
+        console.log("gg")
+        document.getElementById('products').style.gridTemplateColumns = "repeat(4, 1fr)";
+    }
+    document.getElementById('grid_3').onclick = () => {
+        console.log("gg")
+        document.getElementById('products').style.gridTemplateColumns = "repeat(3, 30%)";
+    }
+
+
+    console.log(products);
+
+
+    
+
+</script>
