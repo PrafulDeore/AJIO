@@ -102,6 +102,9 @@ body{
     font-weight: 600;
     font-size: 13px;
 }
+#products>div>p{
+   font-family: 'Lora', sans-serif;
+}
 #products p{
     margin-top: 2px;
     margin-bottom: 2px;
@@ -121,6 +124,7 @@ body{
 }
 .prices>p:nth-child(2){
     text-decoration:line-through;
+   
 }
 .prices>p:nth-child(3){
     color: #b59e7c;
