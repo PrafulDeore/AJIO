@@ -160,9 +160,10 @@ font-family: 'Lora', sans-serif;
     display: flex;
     align-items: center;
     gap:15px;
+    margin-left: 20px;
 }
 .cate_check,#price,#brands,#discounts{
-    margin-left: 25px;
+    margin-left: 45px;
 }
 #filters i{
     cursor: pointer;

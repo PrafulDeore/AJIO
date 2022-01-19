@@ -138,12 +138,12 @@
                         GRID
                     </p>
 
-                    <div>
+                    <div id="grid_3">
                         <div></div>
                         <div></div>
                         <div></div>
                     </div>
-                    <div>
+                    <div id="grid_4">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -359,7 +359,7 @@
             display(products)
         }
     }
-    // categories hide/shoew function 
+    // categories hide/show function 
     document.getElementById('cate_gry_show').onclick = () => {
         document.getElementById('cate_gry_show').style.display = "none"
         document.getElementById('categories').style.display = "block"
@@ -375,6 +375,7 @@
 
     }
 
+    // price hide show function
     document.getElementById('show_prices').onclick = () => {
         document.getElementById('show_prices').style.display = "none"
         document.getElementById('price').style.display = "block"
@@ -388,6 +389,48 @@
         document.getElementById('hide_prices').style.display = "none"
 
 
+    }
+    // brand hide show function 
+    document.getElementById('show_brand').onclick = () => {
+        document.getElementById('show_brand').style.display = "none"
+        document.getElementById('brands').style.display = "block"
+        document.getElementById('hide_brand').style.display = "block"
+
+
+    }
+    document.getElementById('hide_brand').onclick = () => {
+        document.getElementById('show_brand').style.display = "block"
+        document.getElementById('brands').style.display = "none"
+        document.getElementById('hide_brand').style.display = "none"
+
+
+    }
+
+    // discount hide show function 
+    document.getElementById('show_discount').onclick = () => {
+        document.getElementById('show_discount').style.display = "none"
+        document.getElementById('discounts').style.display = "block"
+        document.getElementById('hide_discount').style.display = "block"
+
+
+    }
+    document.getElementById('hide_discount').onclick = () => {
+        document.getElementById('show_discount').style.display = "block"
+        document.getElementById('discounts').style.display = "none"
+        document.getElementById('hide_discount').style.display = "none"
+
+
+    }
+    //grid function show 4 cards
+
+
+    document.getElementById('grid_4').onclick = () => {
+        console.log("gg")
+        document.getElementById('products').style.gridTemplateColumns = "repeat(4, 1fr)";
+    }
+    document.getElementById('grid_3').onclick = () => {
+        console.log("gg")
+        document.getElementById('products').style.gridTemplateColumns = "repeat(3, 30%)";
     }
 
 
