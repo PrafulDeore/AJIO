@@ -19,17 +19,71 @@
     <style></style>
   </head>
   <body>
+    <div id="forSignup">
+      <div id="loginClose">
+        <img
+          id="crossImg"
+          src="https://cdn-icons.flaticon.com/png/512/2976/premium/2976286.png?token=exp=1642570065~hmac=dc4ca94997963892efc8afa9c8b22b96"
+          alt=""
+        />
+      </div>
+      <div id="forsignUpDetails">
+        <h2>Welcome to AJIO</h2>
+        <p>Join/Sign In using</p>
+        <div id="googleFb">
+          <div id="forFb">
+            <div id="imageOfFb">
+              <img
+                src="https://www.freepnglogos.com/uploads/facebook-logo-13.png"
+                alt=""
+              />
+            </div>
+            <div id="textFb"><p>FACEBOOK</p></div>
+          </div>
+          <div id="forGoogle">
+            <div id="imageOfGoogle">
+              <img
+                src="https://logo-logos.com/wp-content/uploads/2016/11/Google_icon_logo.png"
+                alt=""
+              />
+            </div>
+            <div id="textGoogle"><p>GOOGLE</p></div>
+          </div>
+        </div>
+
+        <!-- FOR OR -->
+        <div id="forOr">
+          <hr />
+          <p>Or</p>
+          <hr />
+        </div>
+
+        <!-- FOR ENTERING EMAIL -->
+        <p>Enter Mobile Number / Email*</p>
+
+        <input type="text" name="" id="forInput" />
+        <button id="forSignUpbtn">CONTINUE</button>
+        <p id="tAndC">
+          By Signing in,I agree to
+          <a id="tandc" href="https://www.ajio.com/help/termsAndCondition"
+            >Terms and Conditions</a
+          >
+        </p>
+      </div>
+    </div>
+    <!-- NABVAR -->
     <div id="navbar">
       <div id="rightNav">
-        <img
-          src="https://1000logos.net/wp-content/uploads/2020/07/Ajio-Logo1.jpg"
-          alt=""
-          id="ajioLogo"
-        />
+        <a href=""
+          ><img
+            src="https://1000logos.net/wp-content/uploads/2020/07/Ajio-Logo1.jpg"
+            alt=""
+            id="ajioLogo"
+        /></a>
       </div>
       <div id="leftNav">
         <div id="navSign-In">
-          <p><a href="">Sign In / Join AJIO </a></p>
+          <p id="signInJoin">Sign In / Join AJIO</p>
           <p><a href="">Customer Care</a></p>
           <div id="visitajio">
             <p><a href="">Visit AJIOLUXE</a></p>
@@ -69,7 +123,6 @@
       </div>
     </div>
 
-    <!-- For hover over -->
     <div class="onHoverOver" id="toDisplaymen1">
       <div class="hoverOverCategory">
         <p>Shop By :</p>
@@ -134,7 +187,7 @@
         </div>
       </div>
     </div>
-    <!-- end of first div -->
+
     <div class="onHoverOver" id="toDisplaywomen1">
       <div class="hoverOverCategory">
         <p>Shop By :</p>
@@ -207,8 +260,6 @@
       </div>
     </div>
 
-    <!-- end of second div  -->
-
     <div class="onHoverOver" id="toDisplaykids1">
       <div class="hoverOverCategory">
         <p>Shop By :</p>
@@ -278,7 +329,6 @@
       </div>
     </div>
 
-    <!--  end of kids hovering part  -->
     <div class="onHoverOver" id="indie1">
       <div class="hoverOverCategory">
         <p>Shop By :</p>
@@ -347,8 +397,6 @@
         </div>
       </div>
     </div>
-
-    <!-- end of indie -->
 
     <div class="onHoverOver" id="handm1">
       <div class="hoverOverCategory">
@@ -453,50 +501,4 @@
   </body>
 </html>
 
-<script>
-  let dropDownMens = document.getElementById("toDisplaymen");
-  let mainDiv = document.getElementById("toDisplaywomen1");
-
-  dropDownMens.addEventListener("mouseover", function () {
-    document.getElementById("toDisplaymen1").style.display = "block";
-  });
-  dropDownMens.addEventListener("mouseout", function () {
-    document.getElementById("toDisplaymen1").style.display = "none";
-  });
-
-  let dropDownWomens = document.getElementById("toDisplaywomen");
-  dropDownWomens.addEventListener("mouseover", function () {
-    document.getElementById("toDisplaywomen1").style.display = "block";
-  });
-  dropDownWomens.addEventListener("mouseout", function () {
-    document.getElementById("toDisplaywomen1").style.display = "none";
-  });
-
-  let dropDownKids = document.getElementById("toDisplaykids");
-  dropDownKids.addEventListener("mouseover", function () {
-    document.getElementById("toDisplaykids1").style.display = "block";
-  });
-  dropDownKids.addEventListener("mouseout", function () {
-    document.getElementById("toDisplaykids1").style.display = "none";
-  });
-
-  let indie = document.getElementById("indie");
-  indie.addEventListener("mouseover", function () {
-    document.getElementById("indie1").style.display = "block";
-  });
-  indie.addEventListener("mouseout", function () {
-    document.getElementById("indie1").style.display = "none";
-  });
-
-  let HandM = document.getElementById("handm");
-  HandM.addEventListener("mouseover", function () {
-    document.getElementById("handm1").style.display = "block";
-  });
-  HandM.addEventListener("mouseout", function () {
-    document.getElementById("handm1").style.display = "none";
-  });
-
-  document.getElementById("searchajio").addEventListener("click", function () {
-    document.getElementById("searchresult").style.display = "block";
-  });
-</script>
+<script src="./script/script.js"></script>
