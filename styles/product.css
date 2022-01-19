@@ -4,7 +4,8 @@ body{
 }
 #main_area{
     display: flex;
-    border: 1px solid red;
+    padding:0px 30px 0px 10px ;
+    /* border: 1px solid red; */
     /* height: 100vh; */
     
     /* grid-template-columns: repeat(2,); */
@@ -13,7 +14,7 @@ body{
     width: 22%;
     padding: 10px;
     /* flex:1; */
-border: 1px solid rgb(8, 13, 68);
+/* border: 1px solid rgb(8, 13, 68); */
 }
 
 /* product_div css  */
@@ -21,7 +22,7 @@ border: 1px solid rgb(8, 13, 68);
 #products_div{
     width: 78%;
     /* flex:3; */
-    border: 1px solid rgb(59, 201, 59);
+    /* border: 1px solid rgb(59, 201, 59); */
 }
    #products_div>h1{
        padding: 20px 0px;
@@ -32,7 +33,7 @@ border: 1px solid rgb(8, 13, 68);
 #sorting{
     display: flex;
     justify-content: space-between;
-   width: 92%;
+   width: 98%;
     border-top: 1px solid gray;
     align-items: center;
     border-bottom:1px solid gray ;
@@ -76,7 +77,8 @@ border: 1px solid rgb(8, 13, 68);
  #products {
      margin-top: 30px;
         display: grid;
-        grid-template-columns: repeat(3, 30%);
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
         grid-gap: 40px 20px;
         /* align-items: center; */
     }
@@ -154,6 +156,9 @@ border: 1px solid rgb(8, 13, 68);
 font-family: 'Lora', sans-serif;
     font-size: 18px;
     font-weight: 700;
+}
+#filters>div{
+    border-bottom: 1px solid #f2f2f2;
 }
 
 .cate,.pri,.brand,.discount{

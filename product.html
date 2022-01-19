@@ -139,15 +139,15 @@
                     </p>
 
                     <div id="grid_3">
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div id="grid3"></div>
+                        <div id="grid3"></div>
+                        <div id="grid3"></div>
                     </div>
                     <div id="grid_4">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div id="grid4"></div>
+                        <div id="grid4"></div>
+                        <div id="grid4"></div>
+                        <div id="grid4"></div>
 
 
                     </div>
@@ -427,11 +427,18 @@
     document.getElementById('grid_4').onclick = () => {
         console.log("gg")
         document.getElementById('products').style.gridTemplateColumns = "repeat(4, 1fr)";
+        document.getElementById('grid4').style.backgroundColor = "#939393";
+        document.getElementById('grid3').style.backgroundColor = "lightgray";
     }
+    //grid function show 3 card
     document.getElementById('grid_3').onclick = () => {
         console.log("gg")
+
         document.getElementById('products').style.gridTemplateColumns = "repeat(3, 30%)";
+        document.getElementById('grid4').style.backgroundColor = "lightgray";
+        document.getElementById('grid3').style.backgroundColor = "#939393";
     }
+
 
 
     console.log(products);
