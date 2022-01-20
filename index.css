@@ -74,3 +74,7 @@
 #dealsBlock1 img:nth-child(4):hover {
   width: 25%;
 }
+/* sri */
+#section1 > img {
+  cursor: pointer;
+}

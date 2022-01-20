@@ -145,12 +145,11 @@ function navbar() {
 
 <div id="navbar">
   <div id="rightNav">
-    <a href=""
-      ><img
+    <img
         src="https://1000logos.net/wp-content/uploads/2020/07/Ajio-Logo1.jpg"
         alt=""
         id="ajioLogo"
-    /></a>
+    />
   </div>
   <div id="leftNav">
     <div id="navSign-In">
@@ -175,20 +174,18 @@ function navbar() {
       />
 
       <div id="sign-in-ajio">
-        <a href=""
-          ><img
+       <img
             id="hangerImg"
             src="https://cdn-icons-png.flaticon.com/512/18/18409.png"
             alt=""
-        /></a>
+        />
       </div>
       <div id="bag-nav-ajio">
-        <a href=""
-          ><img
+        <img
             id="bagImg"
             src="https://cdn-icons.flaticon.com/png/512/2662/premium/2662503.png?token=exp=1642538432~hmac=cd142899405e668ec7f0139ef20a0269"
             alt=""
-        /></a>
+        />
       </div>
       <div></div>
     </div>

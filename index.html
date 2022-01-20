@@ -673,6 +673,15 @@
   // ..............................................................................
   let dropDownMens = document.getElementById("toDisplaymen");
   let mainDiv = document.getElementById("toDisplaywomen1");
+  // to closet
+  document.getElementById("hangerImg").addEventListener("click", () => {
+    window.location.href = "closet.html";
+  });
+
+  // to bag
+  document.getElementById("bagImg").addEventListener("click", () => {
+    window.location.href = "bag.html";
+  });
 
   dropDownMens.addEventListener("mouseover", function () {
     document.getElementById("toDisplaymen1").style.display = "block";
@@ -809,6 +818,12 @@
   document.getElementById("loginClose2").addEventListener("click", () => {
     document.getElementById("forSignup2").style.display = "none";
   });
+
+  //
+  document.getElementById("ajioLogo").addEventListener("click", () => {
+    window.location.href = "index.html";
+    console.log("hu");
+  });
   // end ofdisplay
   // Slider 1 Start
   let i = 0;
@@ -926,4 +941,10 @@
   // div5.innerHTML = sliderFunc5();
   // div5.innerHTML = "";
   // Slider 5 End
+
+  // /going toproduct page
+
+  document.getElementById("section1").addEventListener("click", () => {
+    window.location.href = "product.html";
+  });
 </script>

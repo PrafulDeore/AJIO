@@ -1,185 +1,192 @@
-@import url('http://fonts.cdnfonts.com/css/lora');
-body{
-    font-family: 'Source Sans Pro', sans-serif;
+@import url("http://fonts.cdnfonts.com/css/lora");
+body {
+  font-family: "Source Sans Pro", sans-serif;
 }
-#main_area{
-    display: flex;
-    padding:0px 30px 0px 10px ;
-    /* border: 1px solid red; */
-    /* height: 100vh; */
-    
-    /* grid-template-columns: repeat(2,); */
+#main_area {
+  display: flex;
+  padding: 0px 30px 0px 10px;
+  /* border: 1px solid red; */
+  /* height: 100vh; */
+
+  /* grid-template-columns: repeat(2,); */
 }
-#functionalty{
-    width: 22%;
-    padding: 10px;
-    /* flex:1; */
-/* border: 1px solid rgb(8, 13, 68); */
+#functionalty {
+  width: 22%;
+  padding: 10px;
+  /* flex:1; */
+  /* border: 1px solid rgb(8, 13, 68); */
 }
 
 /* product_div css  */
 
-#products_div{
-    width: 78%;
-    /* flex:3; */
-    /* border: 1px solid rgb(59, 201, 59); */
+#products_div {
+  width: 78%;
+  /* flex:3; */
+  /* border: 1px solid rgb(59, 201, 59); */
 }
-   #products_div>h1{
-       padding: 20px 0px;
-        text-align: center;
-        font-family: 'Lora', sans-serif;
-        font-weight: normal;
-    }
-#sorting{
-    display: flex;
-    justify-content: space-between;
-   width: 98%;
-    border-top: 1px solid gray;
-    align-items: center;
-    border-bottom:1px solid gray ;
-    background-color: #f9f9f9;
-    padding: 10px ;
-    
+#products_div > h1 {
+  padding: 20px 0px;
+  text-align: center;
+  font-family: "Lora", sans-serif;
+  font-weight: normal;
 }
-#sorting span{
-    margin-right: 10px;
-    color: lightgray;
+#sorting {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  border-top: 1px solid gray;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  background-color: #f9f9f9;
+  padding: 10px;
 }
-#sorting_function{
-    font-size: 10px;
-    padding: 4px 25px 4px 2px;
-    font-weight: 600;
+#sorting span {
+  margin-right: 10px;
+  color: lightgray;
 }
-#total_items{
-    margin-left: 40px;
-    font-weight: bold;
-    font-size: 14px;
+#sorting_function {
+  font-size: 10px;
+  padding: 4px 25px 4px 2px;
+  font-weight: 600;
 }
-#grid>p{
-    margin-right: 10px;
+#total_items {
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 14px;
 }
-#grid,#grid>div{
-    display: flex;
-    align-items: center;
-
-   
+#grid > p {
+  margin-right: 10px;
 }
-#grid>div{
-     border: 1px solid gray;
+#grid,
+#grid > div {
+  display: flex;
+  align-items: center;
 }
-#grid>div>div{
-    width: 6px;
-    height: 15px;
-    margin: 3px;
-    background-color: lightgray;
+#grid > div {
+  border: 1px solid gray;
+}
+#grid > div > div {
+  width: 6px;
+  height: 15px;
+  margin: 3px;
+  background-color: lightgray;
 }
 
- #products {
-     margin-top: 30px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: space-between;
-        grid-gap: 40px 20px;
-        /* align-items: center; */
-    }
- 
-    #products>div{
-        position: relative;
-        display: flex;
-    flex-direction: column;
- align-items: center;
-    }
-       /* #products>div>div>p{
+#products {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  grid-gap: 40px 20px;
+  /* align-items: center; */
+}
+
+#products > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* #products>div>div>p{
            margin-right:4px ;
        } */
-#products img{
-    width: 100%;
+#products img {
+  width: 100%;
 }
-#products>div>h6{
-    margin-top: 10px;
-    margin-bottom: 5px;
-    color:#b59e7c;
-    font-weight: 600;
-    font-size: 13px;
+#products > div > h6 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #b59e7c;
+  font-weight: 600;
+  font-size: 13px;
 }
-#products>div>p{
-   font-family: 'Lora', sans-serif;
+#products > div > p {
+  font-family: "Lora", sans-serif;
 }
-#products p{
-    margin-top: 2px;
-    margin-bottom: 2px;
-    font-size: 13px;
-    text-align: center;
+#products p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 13px;
+  text-align: center;
 }
-.prices{
-    display: flex;
-    justify-content: center;
-    gap: 3px;
+.prices {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
 }
-.img_div{
-    position: relative;
+.img_div {
+  position: relative;
 }
-.prices>p:nth-child(1){
-    font-weight: bold;
+.prices > p:nth-child(1) {
+  font-weight: bold;
 }
-.prices>p:nth-child(2){
-    text-decoration:line-through;
-   
+.prices > p:nth-child(2) {
+  text-decoration: line-through;
 }
-.prices>p:nth-child(3){
-    color: #b59e7c;
+.prices > p:nth-child(3) {
+  color: #b59e7c;
 }
-#quickview{
-    position: absolute;
-   bottom: 0px;
-    background-color: rgba(255, 255, 255, 0.5);
-    color:black;
-    width: 100%;
-    font-weight: bold;
-    padding: 10px 0px;
-    text-align: center;
-    /* visibility: hidden; */
-    display: none;
+#quickview {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  width: 100%;
+  font-weight: bold;
+  padding: 10px 0px;
+  text-align: center;
+  /* visibility: hidden; */
+  display: none;
 }
-#products>div:hover #quickview{
-    /* visibility: visible; */
-    display: block;
-    cursor: pointer;
-
+#products > div:hover #quickview {
+  /* visibility: visible; */
+  display: block;
+  cursor: pointer;
 }
 /* functionalty div css  */
 
+#heading {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#heading > p {
+  font-family: "Lora", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+#filters > div {
+  border-bottom: 1px solid #f2f2f2;
+}
 
-#heading{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.cate,
+.pri,
+.brand,
+.discount {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 20px;
 }
-#heading>p{
-font-family: 'Lora', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
+.cate_check,
+#price,
+#brands,
+#discounts {
+  margin-left: 45px;
 }
-#filters>div{
-    border-bottom: 1px solid #f2f2f2;
+#filters i {
+  cursor: pointer;
 }
-
-.cate,.pri,.brand,.discount{
-    display: flex;
-    align-items: center;
-    gap:15px;
-    margin-left: 20px;
+#cate_gry_hide,
+#hide_prices,
+#hide_brand,
+#hide_discount {
+  display: none;
 }
-.cate_check,#price,#brands,#discounts{
-    margin-left: 45px;
-}
-#filters i{
-    cursor: pointer;
-}
-#cate_gry_hide,#hide_prices,#hide_brand,#hide_discount{
-    display: none;
-}
-#categories,#price,#brands,#discounts{
-    display: none;
+#categories,
+#price,
+#brands,
+#discounts {
+  display: none;
 }

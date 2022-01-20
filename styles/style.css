@@ -12,10 +12,14 @@ body {
 #signInJoin:hover {
   cursor: pointer;
 }
-
+#rightNav > img:hover {
+  cursor: pointer;
+}
 /* hover over */
 #navbar {
   /* border: 1px solid red;  */
+  /* position: ;  */
+  z-index: 1000;
   height: 95px;
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -102,6 +106,7 @@ body {
   width: 90%;
   margin-left: 5%;
   background-color: white;
+  z-index: 1;
 }
 .hoverOverCategory {
   display: flex;
@@ -188,7 +193,7 @@ p {
 #forSignup1,
 #forSignup2 {
   width: 28%;
-  /* border: 1px solid teal; */
+  border: 1px solid teal;
   position: absolute;
   height: 780px;
   margin-left: 36%;
@@ -196,6 +201,7 @@ p {
   background-color: white;
   display: none;
   font-weight: normal;
+  z-index: 100;
 }
 
 /* ........... */
@@ -387,4 +393,9 @@ hr {
 }
 #forVerfication {
   font-size: 25px;
+}
+/* pointer */
+#hangerImg,
+#bagImg {
+  cursor: pointer;
 }
