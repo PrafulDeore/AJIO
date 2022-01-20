@@ -7,7 +7,7 @@ body {
 }
 
 #navSec > p {
-  font-size: 15px;
+  font-size: 14px;
 }
 #signInJoin:hover {
   cursor: pointer;
@@ -128,11 +128,11 @@ body {
 }
 .clothingType {
   display: flex;
-  gap: 1%;
 }
 .dropdownClass {
   width: 25%;
   /* border: 1px solid blue; */
+  margin-left: 2%;
 }
 #toDisplaywomen1,
 #toDisplaymen1,
@@ -281,7 +281,7 @@ h2 {
   height: 100%;
   padding-top: 0px;
   width: 56%;
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 700;
   align-items: center;
   color: blue;
