@@ -63,14 +63,14 @@
   height: 40%;
   width: 30%;
 }
-/* #fourtnsub2 {
-  border: 1px solid red;
+#fourtnsub2 {
+  /* border: 1px solid red; */
   height: 180px;
   display: flex;
 }
 #fourtnsub2 > div {
   height: 60%;
-  border: 1px solid white;
-  width: 14%;
+  /* border: 1px solid white; */
+  width: 10%;
   margin-top: 1%;
-} */
+}
