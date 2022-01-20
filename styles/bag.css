@@ -157,11 +157,7 @@
          align-items: flex-end;
          justify-content: space-around;
     }
-    .pri_del>div {
-       
-        
-/* border: 1px solid green; */
-    }
+    
 
     .p_details_div>p {
         margin-top: 3px;
