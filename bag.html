@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="https://assets.ajio.com/static/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap"
         rel="stylesheet">
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="./styles/bag.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <title>Bag Page</title>
+    <title>Your Shopping Bag | AJIO</title>
 </head>
 <style>
 
@@ -35,7 +36,7 @@
                         src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBhZ7jQJbXZoSfo6Rg1Zzd6vHQRgXVVw3iZ6WiztkSxjaQnCTe"
                         alt="" />
                     <div class="line"></div>
-                    <img height="35px"
+                    <img height="35px" style="border-radius: 50% ;"
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWunzh4bIHkQqxcMlcmWLlgHcGb-S0NZTS_StUQYJ1TxemMKAa"
                         alt="" />
                     <div class="line"></div>
@@ -64,8 +65,48 @@
     </div>
     <div id="main"></div>
     <div id="bag_container">
-        <div id="bagmain"></div>
+        <div id="mybag_item">
+            <h2>My Bag <span id="card_len"></span></h2>
+            <div id="bagmain"></div>
+        </div>
+
         <div id="order_container">
+            <div id="payment_main">
+
+
+                <div id="payment_box">
+                    <div id="one">What is AJIO Wallet?</div>
+                    <h4>Order Details</h4>
+                    <div id="price">
+                        <div>
+                            <p>Bag total</p>
+                            <p id="bagt">#####</p>
+                        </div>
+                        <div>
+                            <p>Bag discount</p>
+                            <p id="bags">Rs. 4,446.00</p>
+                        </div>
+                        <div>
+                            <p>Delivery</p>
+                            <p>FREE</p>
+                        </div>
+                        <div>
+                            <h4>Total Amount</h4>
+                            <h4 id="bagp">Rs. 2,451.00</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+                <a href="#"><button id="pay_btn">PROCEED TO SHIPPING</button></a>
+            </div>
+            <div id="coupon">
+                <h3>Apply Coupan</h3>
+                <div>
+                    <input type="text" placeholder="Enter Coupon Code">
+                    <button>Apply</button>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -79,64 +120,140 @@
 
 </html>
 <script>
-
+    let total_arr = [];
+    let total_bag = 0;
+    let total_save = 0;
+    let total_price = 0;
+    let final_bag = {};
     let bag_arr = JSON.parse(localStorage.getItem('bagItems')) || [];
+    display_bag(bag_arr)
+    document.getElementById('card_len').innerHTML = `(${bag_arr.length} items)`;
+    function display_bag(bag_arr) {
+        document.getElementById('bagmain').innerHTML = null;
 
-    bag_arr.map((ele) => {
-        let div = document.createElement('div');
-        div.setAttribute('class', 'bag_card')
-        let img_detail_div = document.createElement('div');
-        img_detail_div.setAttribute('class', 'img_detail')
-        let image = document.createElement('img');
-        image.src = ele.image.img1;
+        bag_arr.map((ele, index) => {
+            let div = document.createElement('div');
+            div.setAttribute('class', 'bag_card')
+            let img_detail_div = document.createElement('div');
+            img_detail_div.setAttribute('class', 'img_detail')
+            let image = document.createElement('img');
+            image.src = ele.image.img1;
 
-        // product details div 
-        let detial_div = document.createElement('div');
-        detial_div.setAttribute("class", 'pro_details_div')
-        let pro_name = document.createElement('p');
-        pro_name.innerHTML = `${ele.name}- ${ele.details}`;
-        let pro_detail = document.createElement('p');
-        pro_detail.innerHTML = ele.details;
-        detial_div.append(pro_name);
+            // product details div 
+            let detial_div = document.createElement('div');
+            detial_div.setAttribute("class", 'pro_details_div')
+            let pro_name = document.createElement('p');
+            pro_name.innerHTML = `${ele.name}- <span>${ele.details}</span>`;
+            let pro_detail = document.createElement('p');
+            pro_detail.innerHTML = ele.details;
+            detial_div.append(pro_name);
 
-        // quantity div 
-        let quantity_div = document.createElement('div');
-        let qty = document.createElement('div');
-        qty.innerHTML = `<h3>qty ${ele.quant}</h3>`;
-        quantity_div.append(qty);
+            // quantity div 
+            let quantity_div = document.createElement('div');
+            quantity_div.setAttribute('class', 'quantity_div');
+            let qty = document.createElement('p');
+            qty.innerHTML = `<span>Qty</span> ${ele.quant} `;
+            let plus = document.createElement('p');
+            plus.innerHTML = `<i class="fas fa-plus"></i>`;
+            let minus = document.createElement('p');
+            minus.innerHTML = ` <i class="fas fa-minus"></i>`
+            plus.onclick = () => {
+                ele.quant = ele.quant + 1;
+                qty.innerHTML = `qty ${ele.quant}`;
+                console.log(ele.quant);
+                bag_arr.splice(index, 1);
+                bag_arr.push(ele);
 
-        //prices div
-        let price_div = document.createElement('div');
-        price_div.setAttribute("class", 'price_div')
-        let saving = document.createElement('p');
-        saving.innerHTML = `<i class="fas fa-angle-down"></i> <span>Savings : </span> Rs. ${(ele.main_price - ele.discount_price).toFixed(2)}`;
-        let discount_p = document.createElement('p');
-        discount_p.innerHTML = `Rs. ${ele.discount_price.toFixed(2)}`;
-        let main_price = document.createElement('p');
-        main_price.innerHTML = `Rs. ${ele.main_price.toFixed(2)} (${ele.discount}%)`;
-
-        //delete btn div 
-        let del_closet = document.createElement('div');
-        let delete_btn = document.createElement('p');
-        delete_btn.innerHTML = "Delete";
-        let move_to_closet = document.createElement('p');
-        move_to_closet.innerHTML = `<i class="fas fa-paperclip"></i> Move to closet`;
-
-        del_closet.append(delete_btn, move_to_closet);
-        price_div.append(saving, main_price, discount_p);
-
-        let div_pri_del = document.createElement('div');
-        div_pri_del.setAttribute('class', 'pri_del')
-        del_closet.setAttribute("class", 'del_close')
-        div_pri_del.append(price_div, del_closet);
-        img_detail_div.append(image, detial_div)
-        div.append(img_detail_div, quantity_div, div_pri_del);
-        document.getElementById('bagmain').append(div);
+                localStorage.setItem('bagItems', JSON.stringify(bag_arr));
 
 
+                display_bag(bag_arr);
+
+            }
+            minus.onclick = () => {
+                if (ele.quant > 1) {
+                    ele.quant = ele.quant - 1;
+                }
+
+                qty.innerHTML = `qty ${ele.quant} `;
+                bag_arr.splice(index, 1);
+                bag_arr.push(ele);
+
+                localStorage.setItem('bagItems', JSON.stringify(bag_arr));
+
+
+                display_bag(bag_arr);
+
+                console.log(ele.quant);
+            }
 
 
 
-    })
+            quantity_div.append(plus, qty, minus);
+
+            //prices div
+            let price_div = document.createElement('div');
+            price_div.setAttribute("class", 'price_div')
+            let saving = document.createElement('p');
+
+
+            saving.innerHTML = `<i class="fas fa-angle-down"></i> <span>Savings : </span> Rs. ${(ele.quant * (ele.main_price - ele.discount_price)).toFixed(2)}`;
+            let discount_p = document.createElement('p');
+            discount_p.innerHTML = `Rs. ${(ele.quant * ele.discount_price).toFixed(2)}`;
+            let main_price = document.createElement('p');
+            main_price.innerHTML = `Rs. ${(ele.quant * ele.main_price).toFixed(2)} (${ele.discount}%)`;
+
+            //delete btn div 
+            let del_closet = document.createElement('div');
+            del_closet.setAttribute('class', ' del_closet');
+            let delete_btn = document.createElement('p');
+            delete_btn.innerHTML = "Delete";
+            delete_btn.addEventListener('click', function () {
+                mydelete(index);
+            })
+            let move_to_closet = document.createElement('p');
+            move_to_closet.innerHTML = `<i class="fas fa-paperclip"></i> Move to closet`;
+
+            del_closet.append(delete_btn, move_to_closet);
+            price_div.append(saving, main_price, discount_p);
+
+            let div_pri_del = document.createElement('div');
+            div_pri_del.setAttribute('class', 'pri_del')
+            del_closet.setAttribute("class", 'del_close')
+            div_pri_del.append(price_div, del_closet);
+            img_detail_div.append(image, detial_div)
+            div.append(img_detail_div, quantity_div, div_pri_del);
+            document.getElementById('bagmain').append(div);
+
+            total_bag += ele.quant * ele.main_price;
+            total_save += ele.quant * (ele.main_price - ele.discount_price);
+            total_price += ele.quant * ele.discount_price;
+        });
+    }
+
+    final_bag = {
+        total_save,
+        total_bag,
+        total_price
+    }
+    function bag_final() {
+        document.getElementById('bagt').innerHTML = `Rs. ${total_bag.toFixed(2)}`;
+        document.getElementById('bags').innerHTML = `Rs. ${total_save.toFixed(2)}`;
+        document.getElementById('bagp').innerHTML = `Rs. ${total_price.toFixed(2)}`;
+        localStorage.setItem('total_bag', JSON.stringify(final_bag));
+        display_bag(bag_arr);
+    }
+    bag_final()
+
+
+    function mydelete(index) {
+        console.log(index);
+        bag_arr.splice(index, 1);
+        localStorage.setItem('bagItems', JSON.stringify(bag_arr));
+        display_bag(bag_arr);
+        document.getElementById('card_len').innerHTML = `(${bag_arr.length} items)`;
+
+    }
+
 
 </script>

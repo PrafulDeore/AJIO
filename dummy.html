@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #payment_main {
+            width: 290px;
+        }
+
+        #payment_box {
+            padding: 15px;
+
+            width: 100%;
+            background-color: rgb(250, 250, 250);
+
+            /* margin-left: 200px; */
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        }
+
+        #price>div {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-family: 'SourceSansPro';
+
+        }
+
+        #payment_box>h4 {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        #price>div>p,
+        #price>div>h4 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        #pay_btn {
+            padding: 20px;
+            width: 114%;
+            border: transparent;
+            color: white;
+            font-weight: 600;
+            background-color: rgb(221, 181, 109);
+        }
+
+
+
+        #one {
+            background-color: rgb(254, 251, 228);
+            color: rgb(20, 89, 97);
+            text-align: right;
+            padding: 10px;
+            font-size: 12px;
+            font-weight: 600;
+            font-family: 'SourceSansPro';
+        }
+    </style>
+</head>
+
+<body>
+    <div id="payment_main">
+
+
+        <div id="payment_box">
+            <div id="one">What is AJIO Wallet?</div>
+            <h4>Order Details</h4>
+            <div id="price">
+                <div>
+                    <p>Bag total</p>
+                    <p>#####</p>
+                </div>
+                <div>
+                    <p>Bag discount</p>
+                    <p>Rs. 4,446.00</p>
+                </div>
+                <div>
+                    <p>Delivery</p>
+                    <p>FREE</p>
+                </div>
+                <div>
+                    <h4>Total Amount</h4>
+                    <h4>Rs. 2,451.00</h4>
+                </div>
+
+            </div>
+
+        </div>
+        <button id="pay_btn">PROCEED TO PAYMENT</button>
+    </div>
+</body>
+
+</html>
