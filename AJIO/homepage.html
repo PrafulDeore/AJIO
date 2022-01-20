@@ -440,7 +440,7 @@
 			</div>
 			<!-- 5th slider start -->
 			<img name="slide5" width="100%" />
-			<div id="slider5">slider</div>
+			<div id="slider5"></div>
 			<!-- 5th slider end -->
 			<img
 				src="https://assets.ajio.com/medias/sys_master/images/images/h65/h28/46457756844062/19.jpg"
@@ -766,35 +766,6 @@
 	div3.innerHTML = sliderFunc3();
 	div3.innerHTML = '';
 	// Slider 3 End
-
-	// Slider 4 start
-	let l = 0;
-	let slider4Images = [];
-	slider4Images[0] =
-		'https://assets.ajio.com/medias/sys_master/images/images/hee/hc8/46465224015902/07012022-D-unisex-exclusivebrands-performax-upto70.jpg';
-	slider4Images[1] =
-		'https://assets.ajio.com/medias/sys_master/images/images/hf4/h55/46465223753758/07012022-D-unisex-exclusivebrands-altheory-upto70.jpg';
-	slider4Images[2] =
-		'https://assets.ajio.com/medias/sys_master/images/images/h16/h98/46465223950366/07012022-D-unisex-exclusivebrands-muji-upto70.jpg';
-	slider4Images[3] =
-		'https://assets.ajio.com/medias/sys_master/images/images/hef/hf4/46465224212510/07012022-D-unisex-exclusivebrands-portico-upto50.jpg';
-	slider4Images[4] =
-		'https://assets.ajio.com/medias/sys_master/images/images/h12/h3e/46465223884830/07012022-D-unisex-exclusivebrands-indiepicks-4070.jpg';
-	slider4Images[5] =
-		'https://assets.ajio.com/medias/sys_master/images/images/h68/h0f/46529246298142/07012022-D-MHP-exclusive-brands-trends-footwear-upto70.jpg';
-	function sliderFunc4() {
-		document.slide4.src = slider4Images[l];
-		if (l < slider4Images.length - 1) {
-			l++;
-		} else {
-			l = 0;
-		}
-		setTimeout('sliderFunc4()', 3000);
-	}
-	var div4 = document.getElementById('slider4');
-	div4.innerHTML = sliderFunc4();
-	div4.innerHTML = '';
-	// Slider 4 End
 
 	// Slider 5 start
 	let m = 0;
