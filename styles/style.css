@@ -132,7 +132,7 @@ body {
 }
 .dropdownClass {
   width: 25%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 #toDisplaywomen1,
 #toDisplaymen1,
@@ -149,6 +149,7 @@ body {
   margin-left: 63%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: none;
+  background-color: white;
 }
 #searchresult > div ~ div {
   cursor: pointer;
@@ -265,7 +266,7 @@ h2 {
 #forFb1 > div > img,
 #forGoogle > div > img,
 #forGoogle1 > div > img {
-  padding-left: 90%;
+  padding-left: 70%;
   padding-top: 30%;
   height: 60%;
   width: 100%;
