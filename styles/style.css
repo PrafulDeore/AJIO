@@ -1,0 +1,389 @@
+body {
+  margin: 0px;
+}
+/* hover over............. */
+#navSec > p:hover {
+  cursor: pointer;
+}
+
+#navSec > p {
+  font-size: 15px;
+}
+#signInJoin:hover {
+  cursor: pointer;
+}
+
+/* hover over */
+#navbar {
+  /* border: 1px solid red;  */
+  height: 95px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#rightNav {
+  width: 30%;
+  height: 100%;
+  width: 30%;
+  /* border: 1px solid green; */
+}
+#leftNav {
+  width: 70%;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+#ajioLogo {
+  height: 90%;
+  padding-left: 6%;
+}
+#navSign-In {
+  height: 47%;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 4%;
+  justify-content: end;
+}
+#navSec {
+  width: 100%;
+  height: 47%;
+  /* border: 1px solid green; */
+  display: flex;
+  gap: 3%;
+}
+#visitajio {
+  width: 15%;
+  height: 100%;
+  color: white;
+  background-color: black;
+  text-align: center;
+  /* font-size: 20px; */
+}
+#navSign-In > p > a {
+  text-decoration: none;
+  color: black;
+}
+#sign-in-ajio,
+#bag-nav-ajio {
+  /* border: 1px solid red; */
+  width: 5%;
+  border-radius: 50px;
+  align-items: center;
+  padding-top: 0.8%;
+  text-align: center;
+
+  /* background-color: #2c4152; */
+}
+#searchajio {
+  width: 35%;
+  border-radius: 25px;
+  border: 1px solid black;
+  font-size: 18px;
+  height: 70%;
+  margin-top: 0.5%;
+  font-weight: normal;
+  background-color: #fffded;
+}
+#visitajio > p > a {
+  text-decoration: none;
+  color: white;
+}
+
+/* to hover over  */
+
+#body {
+  /* border: 4px solid green; */
+  height: 600px;
+}
+
+.onHoverOver {
+  border: 1px solid white;
+  height: 600px;
+  position: absolute;
+  width: 90%;
+  margin-left: 5%;
+  background-color: white;
+}
+.hoverOverCategory {
+  display: flex;
+  gap: 1%;
+  width: 100%;
+  height: 10%;
+  /* border: 1px solid green; */
+}
+.categoryajio,
+.brandajio {
+  width: 7%;
+  /* height: 80%; */
+  background-color: #fafafa;
+
+  margin-top: 0.5%;
+}
+.categoryajio > p,
+.brandajio > p {
+  font-size: 18px;
+  text-align: center;
+}
+.hoverOverCategory > p {
+  padding-top: 0.7%;
+}
+.clothingType {
+  display: flex;
+  gap: 1%;
+}
+.dropdownClass {
+  width: 25%;
+  /* border: 1px solid blue; */
+}
+#toDisplaywomen1,
+#toDisplaymen1,
+#toDisplaykids1,
+#handm1,
+#indie1 {
+  display: none;
+}
+#searchresult {
+  /* border: 1px solid violet; */
+  position: absolute;
+  width: 18%;
+  height: 470px;
+  margin-left: 63%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: none;
+  background-color: white;
+}
+#searchresult > div ~ div {
+  cursor: pointer;
+  border: 0.5px solid grey;
+  border-left: none;
+  border-right: none;
+  width: 98%;
+  margin: auto;
+  height: 35px;
+}
+#searchresult :hover {
+  background-color: #d0d3c7;
+}
+#searchresult > div ~ div {
+  font-weight: normal;
+  font-size: 17px;
+}
+#searchresult > div > a {
+  text-decoration: none;
+  color: black;
+}
+.dropDownFont {
+  font-weight: 700;
+}
+#bagImg,
+#hangerImg {
+  height: 68%;
+  width: 50%;
+}
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+/* SIGNING UP */
+#forSignup,
+#forSignup1,
+#forSignup2 {
+  width: 28%;
+  /* border: 1px solid teal; */
+  position: absolute;
+  height: 780px;
+  margin-left: 36%;
+  margin-top: 3%;
+  background-color: white;
+  display: none;
+  font-weight: normal;
+}
+
+/* ........... */
+
+/* ................ */
+
+#loginClose,
+#loginClose1,
+#loginClose2 {
+  /* border: 1px solid red; */
+  height: 16px;
+  width: 4%;
+  cursor: pointer;
+  margin-left: 93%;
+  margin-top: 3%;
+}
+#crossImg,
+#crossImg1,
+#crossImg2 {
+  height: 100%;
+  width: 100%;
+}
+#forsignUpDetails,
+#forsignUpDetails1 {
+  width: 90%;
+  margin: auto;
+  /* border: 1px solid red; */
+  margin-top: 10%;
+}
+h2 {
+  font-size: 27px;
+  font-weight: normal;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#googleFb,
+#googleFb1 {
+  width: 100%;
+  /* border: 1px solid green; */
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#forFb,
+#forFb1 {
+  width: 47%;
+  height: 100%;
+  border: 2px solid #485995;
+  display: flex;
+  justify-content: space-between;
+}
+#forGoogle,
+#forGoogle1 {
+  width: 47%;
+  height: 100%;
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+#imageOfFb,
+#imageOfFb1 #imageOfGoogle,
+#imageOfGoogle1 {
+  margin-top: 0%;
+  height: 100%;
+  width: 20%;
+}
+#forFb > div > img,
+#forFb1 > div > img,
+#forGoogle > div > img,
+#forGoogle1 > div > img {
+  padding-left: 70%;
+  padding-top: 30%;
+  height: 60%;
+  width: 100%;
+}
+/*  */
+#textFb,
+#textFb1,
+#textGoogle,
+#textGoogle1 {
+  display: flex;
+  /* border: 1px solid teal; */
+  height: 100%;
+  padding-top: 0px;
+  width: 56%;
+  font-size: 19px;
+  font-weight: 700;
+  align-items: center;
+  color: blue;
+}
+#textGoogle,
+#textGoogle1 {
+  color: red;
+}
+
+/* FOR THE OR PART */
+
+#forOr,
+#forOr1 {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  margin: auto;
+}
+hr {
+  width: 40%;
+}
+/* FOR INPUT */
+
+#forInput,
+#forInputName,
+#forInputEmail,
+#forPassword,
+#optionalF,
+#forOtp {
+  width: 97%;
+  height: 40px;
+  border-bottom-color: grey;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+/* FOR BUTTON */
+#forSignUpbtn {
+  margin-top: 7%;
+  font-size: 17px;
+  padding: 3%;
+  width: 50%;
+  font-weight: normal;
+  background-color: #d5a249;
+  color: white;
+  border: none;
+}
+/* TERMS AND CONDITIONS */
+#tAndC,
+#tAndC1 {
+  font-size: 15px;
+  color: grey;
+}
+#tandc,
+#tandc1 {
+  text-decoration: none;
+}
+#navSign-In > p :hover {
+  cursor: pointer;
+}
+/* entering details */
+#forGender {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+#genderCheck {
+  /* border: 1px solid red; */
+  font-size: 20px;
+}
+#forRadio {
+  display: flex;
+  /* border: 1px solid black; */
+  margin-top: 6%;
+  margin-left: 3%;
+  width: 50%;
+  font-size: 20px;
+  justify-content: space-between;
+}
+/* INPUT */
+#forInputName,
+#forInputEmail,
+#forPassword,
+#optionalF,
+#forOtp {
+  width: 97%;
+  margin-top: 3%;
+  height: 35px;
+}
+#sendOtp,
+#confirmOTP {
+  margin-top: 7%;
+  font-size: 17px;
+  padding: 3%;
+  width: 50%;
+  font-weight: normal;
+  background-color: #d5a249;
+  color: white;
+  border: none;
+}
+#forVerfication {
+  font-size: 25px;
+}
