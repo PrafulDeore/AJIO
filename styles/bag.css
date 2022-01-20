@@ -1,0 +1,221 @@
+ * {
+        margin: 0;
+        padding: 0%;
+    }
+
+    #nav {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        border-top: 5px solid #2c4152;
+        z-index: 101;
+        background-color: #fff;
+        border-bottom: 1px solid #e0e0e0;
+        margin-top: 0;
+    }
+
+    #nav_img {
+        padding-left: 12%;
+        padding-top: 8%;
+    }
+
+    #right_top {
+        display: flex;
+        margin-left: 50px;
+        /* border: 1px solid red; */
+    }
+
+    #right_top>a,
+    p {
+        margin-right: 15px;
+        text-decoration: none;
+        margin-top: 0px;
+    }
+
+    #right_top {
+        margin-top: 0px;
+
+        height: 35px;
+        margin-left: 100px;
+        padding-bottom: 35px;
+        color: #406786;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 23px;
+        font-family: SourceSansPro;
+        padding-left: 30px;
+    }
+
+    #right_top {
+        color: black;
+    }
+
+    #right_top p:hover {
+        color: teal;
+        cursor: pointer;
+    }
+
+
+    #visit {
+        font-family: SourceSansPro;
+
+        background-color: black;
+        color: white;
+        width: 130px;
+        text-align: center;
+
+        height: 30px;
+    }
+
+    #depart {
+        /* border: 1px solid red; */
+        height: auto;
+        margin-top: 20px;
+        margin-left: 20%;
+    }
+
+    #phase {
+        height: 40px;
+        width: 400px;
+        display: flex;
+    }
+
+    #phase_t {
+        display: flex;
+    }
+
+    #phase_t>p {
+        margin: auto;
+    }
+
+    .line {
+        margin-top: 15px;
+        background-color: rgb(175, 200, 221);
+        height: 2px;
+        width: 100%;
+    }
+
+    #header_img {
+        width: 100%;
+        height: 200px;
+        /* border: 1px solid; */
+
+    }
+
+    #header_img img {
+        width: 95%;
+        margin-left: 2%;
+    }
+
+    /* bag_div css ------------------------------------------------------------------*/
+
+
+
+    #bag_container {
+        display: flex;
+        padding: 0px 40px 0px 40px;
+    }
+
+    #bagmain {
+        width: 72%;
+        /* border: 1px solid blue; */
+    }
+
+    #order_container {
+        width: 28%;
+        border: 1px solid rgb(64, 64, 122);
+    }
+
+    .bag_card {
+        display: flex;
+        border: 1px solid lightgray;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        justify-content: space-between;
+
+       
+    }
+
+    .bag_card img {
+        width: 30%;
+
+    }
+    
+    .pro_details_div {
+        padding: 15px;
+    }
+    .img_detail{
+        width:45%;  
+        display: flex;
+        justify-content: space-between;
+        /* border: 2px solid palevioletred; */
+    }
+    .pri_del{
+        width:35%;
+         /* border: 2px solid rgb(88, 10, 133); */
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+         justify-content: space-around;
+    }
+    .pri_del>div {
+       
+        
+/* border: 1px solid green; */
+    }
+
+    .p_details_div>p {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        font-size: 16px;
+    }
+     .price_div span{
+         margin-left: 5px;
+         color:#333333;
+         font-weight: normal;
+     }
+     .fa-angle-down{
+         color:#333333;
+         font-weight: lighter;    
+     }
+    
+    .price_div>p:nth-child(1){
+        font-family: 'SourceSansPro';
+        color: #b1a290;
+       
+        font-weight:600;
+        font-size: 14px;
+        margin-bottom: 10px;
+        
+    }
+    
+    .price_div>p:nth-child(2){
+        color: #b1a290;
+        text-decoration: line-through;
+         font-family: 'SourceSansPro';
+        font-weight:600;
+        font-size: 14px;
+        margin-left: 20px;
+        
+    }
+    .price_div>p:nth-child(3){
+         margin-left: 25px;
+        background-color: #e1ecf1;
+padding: 2px 20px 2px 8px;
+border-left: 4px solid #176c93;
+font-size: 16px;
+font-weight: 600;
+/* display: inline-block; */
+
+    }
+
+    .del_close {
+       width: 100%;
+        /* margin-top: 40px; */
+        display: flex;
+        justify-content: space-around;
+        color: #176d97;
+       font-family: 'SourceSansPro', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+    }
+   

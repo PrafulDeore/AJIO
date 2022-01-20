@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specific Products</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Source Sans Pro';
+        }
+
+        #body {
+            font-family: 'Source Sans Pro';
+        }
+
+        #navbar {
+            width: 100%;
+            height: 100px;
+            /* border: 1px solid red; */
+            /* background-color: teal; */
+            /* position:fixed; */
+            z-index: 102;
+        }
+
+        #specific {
+            /* border: 1px solid red; */
+            width: 97%;
+            height: 1000px;
+            margin-top: 100;
+            position: block;
+            margin: auto;
+            display: flex;
+        }
+
+        #specific #leftbox,
+        #rightbox,
+        #midbox {
+            border: 0px solid teal;
+        }
+
+        /* LEFTBOX------------------------------------------------------------------------> */
+        #leftbox {
+            flex: 1.3;
+        }
+
+        #leftbox #innerBox1,
+        #innerBox2,
+        #innerBox3 {
+            /* border: 1px solid red; */
+            width: 35%;
+            height: 100px;
+            margin: auto;
+            margin-top: auto;
+            margin-top: 70px;
+        }
+
+        #leftbox #innerBox1 {
+            margin-top: 160px;
+        }
+
+        #leftbox #small_image1,
+        #small_image2,
+        #small_image3 {
+            width: 100%;
+            height: 100%;
+        }
+
+        #midbox {
+            flex: 3;
+        }
+
+        #midbox #main_img {
+            /* border: 1px solid red; */
+            width: 88%;
+            height: 650px;
+            margin: auto;
+            margin-top: 70px;
+        }
+
+        #main_img #center_image {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* rightbox----------------------------------------------------------------->   */
+        #rightbox {
+            flex: 2;
+        }
+
+        #rightbox #pName {
+            /* border: 1px solid red; */
+            /* height: 50px; */
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(197, 145, 73);
+        }
+
+        #rightbox #pDetails {
+            /* border: 1px solid red; */
+            /* height: 50px; */
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        #rightbox #dPrice {
+            /* border: 1px solid red; */
+            display: flex;
+
+            color: rgb(0, 0, 0);
+            margin-top: 20px;
+            justify-content: center;
+            font-size: 24px;
+            text-align: center;
+            margin-right: 5px;
+        }
+
+
+
+        #taxes {
+            /* border: 1px solid teal; */
+            text-align: center;
+
+        }
+
+        #m_d {
+            /* border: 1px solid red; */
+            display: flex;
+            color: rgb(205, 166, 117);
+            margin: 0;
+            padding: 0;
+            /* border: 0; */
+        }
+
+        #m_d #price_main {
+            margin-left: -20px;
+            display: flex;
+            font-size: 20px;
+            margin: auto;
+            text-decoration: line-through;
+
+        }
+
+        #m_d #pdiscount {
+            display: flex;
+            font-size: 22px;
+            font-weight: bolder;
+            color: rgb(205, 166, 117);
+            margin-right: 40px;
+        }
+
+        /* coupen--------------------------------------------> */
+        .pdp-promotion {
+            text-align: center;
+            margin: 0 auto;
+            width: 300px;
+            padding-top: 25px;
+        }
+
+        .pdp-promo-block {
+            padding: 10px;
+            /* border: 1px dashed #d8d8d8; */
+            display: block;
+            position: relative;
+            width: 100%;
+            height: auto;
+            margin-bottom: 8px;
+        }
+
+        .ic-offer-tag {
+            display: inline;
+            font-family: jioicons !important;
+
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            display: inline-block;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .promo-blck {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            /* border: 0; */
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            /* border-radius: 0; */
+        }
+
+        .promo-title-blck {
+            width: 25%;
+            padding-right: 5px;
+            /* border-right: 1px solid #d8d8d8; */
+            word-wrap: break-word;
+            font-size: 12px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .promo-title {
+            font-weight: 600;
+            color: #b19975;
+        }
+
+        .promo-desc-block {
+            width: 73%;
+            word-wrap: break-word;
+            display: inline-block;
+            vertical-align: super;
+        }
+
+        .promo-desc-block .promo-discounted-price {
+            font-size: 13px;
+            position: absolute;
+            /* border: 1px dashed #d8d8d8; */
+            width: 73%;
+            top: -12px;
+            background-color: #fff8eb;
+            padding: 1px 10px;
+            text-align: left;
+        }
+
+        .promo-desc-block .promo-desc {
+            display: block;
+            color: #939393;
+            font-size: 12px;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+
+
+        /* SIZE-------------------------------------------------------------> */
+        .size-variant-block {
+            width: 250px;
+            margin: 10px auto 0;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .size-variant-block .size-selection {
+            font-size: 14px;
+            text-transform: capitalize;
+            margin: 10px 0;
+            vertical-align: baseline;
+        }
+
+        .size-variant-block .size-swatch {
+            display: inline-block;
+            text-align: center;
+            padding: 0 4px;
+            vertical-align: baseline;
+        }
+
+        .size-variant-block .size-swatch {
+            display: inline-block;
+            text-align: center;
+            padding: 0 4px;
+        }
+
+        .circle.swatch-size-oos {
+            background-position: -192px -268px;
+        }
+
+        .size-variant-block .size-variant-item {
+            /* border: 1px solid #e5e5e5; */
+            /* border-radius: 20px; */
+            padding-top: 6px;
+            text-align: center;
+            min-width: 30px;
+            height: 30px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .circle {
+            background-color: rgb(161, 161, 161);
+        }
+
+        .circle:hover {
+            background-color: rgb(255, 0, 0);
+            color: white;
+        }
+
+        .circle:active {
+            font-size: 15px;
+            display: block;
+        }
+
+        /* Size Chart-------------------------------------------------------> */
+        .size-guide-text {
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            color: #176d93;
+            display: inline-block;
+            font-size: 12px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+
+        .size-guide-text:hover {
+            color: #00aaf3;
+        }
+
+        /* BOTH BUTTON---------------------------------------------------------------> */
+        .btn {
+            margin-top: 20px;
+            margin: auto;
+            /* border: 1px solid rgb(213,162,73); */
+            width: 100%;
+            height: 40px;
+            cursor: pointer;
+            font-weight: bolder;
+            font-size: 14px;
+        }
+
+        .btn:active {
+            color: white;
+            background-color: rgb(255, 0, 0);
+            font-size: 17px;
+            transition: 0.001s;
+        }
+
+        .handpicked {
+            font-size: 10px;
+            text-align: center;
+            color: gray;
+            margin-top: 8px;
+            margin-bottom: 20px;
+        }
+
+        span {
+            margin-right: 10px;
+        }
+
+        #bag {
+            background-color: rgb(213, 162, 73);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <!-- SPECIFIC_Products --------------------------------------------------------------->
+    <div id="specific">
+        <div id="leftbox">
+            <div id="innerBox1"></div>
+            <div id="innerBox2"></div>
+            <div id="innerBox3"></div>
+        </div>
+        <div id="midbox">
+            <div id="main_img"></div>
+        </div>
+        <!-- RIGHTBOX----------------------------------------------------------------->
+        <div id="rightbox">
+            <div id="pName"></div>
+            <div id="pDetails"></div>
+            <div id="dPrice">Rs.</div>
+            <div id="m_d">
+                <div id="price_main">Rs.</div>
+                <div id="pdiscount"></div>
+            </div>
+            <div id="taxes">Price inclusive of all taxes</div>
+
+            <!-- coupen--------------------------------------------------------------->
+            <div id="coupen">
+                <div class="pdp-promotion">
+                    <div class="pdp-promo-block">
+                        <div class="ic-offer-tag"></div>
+                        <div class="promo-blck">
+                            <div class="promo-title-blck">
+                                <div class="promo-title">
+                                    Use Code <br />
+                                    WINTER750
+                                </div>
+                                <div class="promo-tnc-blck">
+                                    <span class="promo-tnc">
+                                        <p href="/ajio-own-sale-policy" title="T&amp;C" target="_blank">T&amp;C</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="promo-desc-block">
+                                <div class="promo-discounted-price">
+                                    Get it for <span>₹1575</span>
+                                </div>
+                                <div class="promo-desc">
+                                    Extra Upto 750 Off on 3490 and Above.
+                                    <a>View All Products&gt;
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pdp-toggle">+10 More</div>
+                </div>
+            </div>
+
+            <!-- SIZE-------------------------------------------------------------------->
+            <div id="size">
+                <div class="size-variant-block">
+                    <div class="size-selection"> Select Size </div>
+                    <div class="size-swatch">
+                        <div class="circle swatch-size-oos size-variant-item sprite-img">S</div>
+                    </div>
+                    <div class="size-swatch">
+                        <div class="circle swatch-size-oos size-variant-item sprite-img">M</div>
+                    </div>
+                    <div class="size-swatch">
+                        <div class="circle swatch-size-oos size-variant-item sprite-img">L</div>
+                    </div>
+                    <div class="size-swatch">
+                        <div class="circle swatch-size-oos size-variant-item sprite-img">XL</div>
+                    </div>
+                    <div class="size-swatch">
+                        <div class="circle swatch-size-oos size-variant-item sprite-img">XXL</div>
+                    </div>
+                </div>
+
+                <!-- SizeChart----------------------------------------------------------->
+                <div class="size-guide-text">
+                    <span class="ic-scale-img">
+                    </span>
+                    <span>Check Size Chart&nbsp;
+                    </span>
+                </div>
+            </div>
+
+            <!-- BOTH BUTTOM------------------------------------------------------------->
+            <button class="btn" id="bag"><span><i class="fas fa-shopping-bag"></i></span> ADD TO BAG</button>
+            <p class="handpicked">HANDPICKED STYLES | ASSURED QUALITY</p>
+            <button class="btn" id="closet"><span><i class="fas fa-anchor"></i></span>SAVE TO CLOSET</button>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+
+    // DOM------------------------------------------------------------->
+    var cartData = JSON.parse(localStorage.getItem("productdb")) || [];
+    var bag = JSON.parse(localStorage.getItem("bagItems")) || [];
+    // console.log("cartD!!!!",cartData) 
+    // console.log("products",products)
+    function showDetails(ele) {
+        //  main_img-------------------------------------------------------------->
+        var main_img = document.getElementById("main_img");
+
+        var img = document.createElement("img");
+        img.setAttribute("src", cartData.image.img1);
+        img.setAttribute("id", "center_image");
+
+        // leftbox----------------------------------------------------------->
+        //  side_img1-------------------------------------------------------------->
+        var innerBox1 = document.getElementById("innerBox1");
+        var small_image1 = document.createElement("img");
+        small_image1.setAttribute("src", cartData.image.img1);
+        small_image1.setAttribute("id", "small_image1");
+
+        //  side_img2--------------------------------------------------------->
+        var innerBox2 = document.getElementById("innerBox2");
+        var small_image2 = document.createElement("img");
+        small_image2.setAttribute("src", cartData.image.img2);
+        small_image2.setAttribute("id", "small_image2");
+        //  side_img3--------------------------------------------------------->
+        var innerBox3 = document.getElementById("innerBox3");
+        var small_image3 = document.createElement("img");
+        small_image3.setAttribute("src", cartData.image.img3);
+        small_image3.setAttribute("id", "small_image3");
+
+        // rightbox-------------------------------------------------------->
+        var pName = document.getElementById("pName");
+        var product_name = document.createElement("h4");
+        product_name.setAttribute("id", "product_name");
+        product_name.innerText = cartData.name;
+
+        var pDetails = document.getElementById("pDetails");
+        var product_details = document.createElement("h4");
+        product_details.setAttribute("id", "product_details");
+        product_details.innerText = cartData.details;
+
+        var dPrice = document.getElementById("dPrice");
+        var product_dPrice = document.createElement("h4");
+        product_dPrice.setAttribute("id", "product_dPrice");
+        product_dPrice.innerText = cartData.discount_price;
+
+        var price_main = document.getElementById("price_main");
+        var product_main_Price = document.createElement("h4");
+        product_main_Price.setAttribute("id", "product_main_Price");
+        product_main_Price.innerText = cartData.main_price;
+
+
+        var pdiscount = document.getElementById("pdiscount");
+        var product_pdiscount = document.createElement("h3");
+        product_pdiscount.setAttribute("id", "product_pdiscount");
+        product_pdiscount.innerText = `( ${cartData.discount}%)`;
+        //  append--------------------------------------------------------------------->
+        main_img.append(img);
+        innerBox1.append(small_image1);
+        innerBox2.append(small_image2);
+        innerBox3.append(small_image3);
+        pName.append(product_name);
+        pDetails.append(product_details);
+        dPrice.append(product_dPrice);
+        price_main.append(product_main_Price);
+        pdiscount.append(product_pdiscount);
+    }
+    showDetails();
+
+    // BAG BUTTON----------------------------------------------------------------->
+    console.log(cartData)
+    console.log(bag.quant)
+    var bagBtn = document.getElementById("bag")
+    bagBtn.addEventListener("click", dataforCart)
+    function dataforCart() {
+
+        for (let i = 0; i < bag.length; i++) {
+
+            if (bag[i].id == cartData.id) {
+
+                cartData.quant = cartData.quant + 1;
+
+                bag.splice(i, 1);
+
+
+                break;
+            }
+
+
+        }
+        bag.push(cartData);
+        localStorage.setItem("bagItems", JSON.stringify(bag));
+    }
+
+
+
+    // When we click on left-side small images they are display in main box-------------->
+    small_image1.addEventListener("click", showImg1);
+    function showImg1(ele) {
+        main_img.innerHTML = "";
+        var small1 = document.createElement("img");
+        small1.setAttribute("src", cartData.image.img1);
+
+        small1.style.width = "100%";
+        main_img.append(small1);
+    }
+    small_image2.addEventListener("click", showImg2);
+    function showImg2(ele) {
+        main_img.innerHTML = "";
+        var small2 = document.createElement("img");
+        small2.setAttribute("src", cartData.image.img2);
+
+        small2.style.width = "100%";
+        main_img.append(small2);
+    }
+
+    small_image3.addEventListener("click", showImg3);
+    function showImg3(ele) {
+        main_img.innerHTML = "";
+        var small3 = document.createElement("img");
+        small3.setAttribute("src", cartData.image.img3);
+
+        small3.style.width = "100%";
+        main_img.append(small3);
+    }
+</script>

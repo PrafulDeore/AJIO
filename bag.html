@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/bag.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Bag Page</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+
+    <div id="navbar2">
+        <div id="nav">
+            <div id="nav_img">
+                <a href="index.html">
+                    <img height="35px" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="" />
+                </a>
+            </div>
+            <div id="depart">
+                <div id="phase">
+                    <img height="35px"
+                        src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBhZ7jQJbXZoSfo6Rg1Zzd6vHQRgXVVw3iZ6WiztkSxjaQnCTe"
+                        alt="" />
+                    <div class="line"></div>
+                    <img height="35px"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWunzh4bIHkQqxcMlcmWLlgHcGb-S0NZTS_StUQYJ1TxemMKAa"
+                        alt="" />
+                    <div class="line"></div>
+                    <img height="35px"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT4gFvIs3-NTFT7hmGJJ3ixDi1bQwjHFzDNA&usqp=CAU"
+                        alt="" />
+                </div>
+                <div id="phase_t">
+                    <p>Bag</p>
+                    <p>Delivery Details</p>
+                    <p>Payment</p>
+                </div>
+            </div>
+
+            <div id="right_top">
+                <p>Hi user</p>
+                <p>My Account</p>
+                <p>Sign out</p>
+                <p>Customer Care</p>
+                <p id="visit">Visit AJIOLUXE</p>
+            </div>
+        </div>
+    </div>
+    <div id="header_img">
+        <img src="https://assets.ajio.com/medias/sys_master/images/images/he2/h08/46513623040030/cart-app.jpg" alt="">
+    </div>
+    <div id="main"></div>
+    <div id="bag_container">
+        <div id="bagmain"></div>
+        <div id="order_container">
+
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
+<script>
+
+    let bag_arr = JSON.parse(localStorage.getItem('bagItems')) || [];
+
+    bag_arr.map((ele) => {
+        let div = document.createElement('div');
+        div.setAttribute('class', 'bag_card')
+        let img_detail_div = document.createElement('div');
+        img_detail_div.setAttribute('class', 'img_detail')
+        let image = document.createElement('img');
+        image.src = ele.image.img1;
+
+        // product details div 
+        let detial_div = document.createElement('div');
+        detial_div.setAttribute("class", 'pro_details_div')
+        let pro_name = document.createElement('p');
+        pro_name.innerHTML = `${ele.name}- ${ele.details}`;
+        let pro_detail = document.createElement('p');
+        pro_detail.innerHTML = ele.details;
+        detial_div.append(pro_name);
+
+        // quantity div 
+        let quantity_div = document.createElement('div');
+        let qty = document.createElement('div');
+        qty.innerHTML = `<h3>qty ${ele.quant}</h3>`;
+        quantity_div.append(qty);
+
+        //prices div
+        let price_div = document.createElement('div');
+        price_div.setAttribute("class", 'price_div')
+        let saving = document.createElement('p');
+        saving.innerHTML = `<i class="fas fa-angle-down"></i> <span>Savings : </span> Rs. ${(ele.main_price - ele.discount_price).toFixed(2)}`;
+        let discount_p = document.createElement('p');
+        discount_p.innerHTML = `Rs. ${ele.discount_price.toFixed(2)}`;
+        let main_price = document.createElement('p');
+        main_price.innerHTML = `Rs. ${ele.main_price.toFixed(2)} (${ele.discount}%)`;
+
+        //delete btn div 
+        let del_closet = document.createElement('div');
+        let delete_btn = document.createElement('p');
+        delete_btn.innerHTML = "Delete";
+        let move_to_closet = document.createElement('p');
+        move_to_closet.innerHTML = `<i class="fas fa-paperclip"></i> Move to closet`;
+
+        del_closet.append(delete_btn, move_to_closet);
+        price_div.append(saving, main_price, discount_p);
+
+        let div_pri_del = document.createElement('div');
+        div_pri_del.setAttribute('class', 'pri_del')
+        del_closet.setAttribute("class", 'del_close')
+        div_pri_del.append(price_div, del_closet);
+        img_detail_div.append(image, detial_div)
+        div.append(img_detail_div, quantity_div, div_pri_del);
+        document.getElementById('bagmain').append(div);
+
+
+
+
+
+    })
+
+</script>

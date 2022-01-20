@@ -16,6 +16,8 @@ products = [
         offer_price: 1575,
         discount: 45,
         type: "Jacket",
+        id: 001,
+        quant: 1
 
     },
 
@@ -32,6 +34,8 @@ products = [
         offer_price: 1260,
         discount: 50,
         type: "Jacket",
+        id: 002,
+        quant: 1
     },
     {
         image: {
@@ -46,6 +50,8 @@ products = [
         offer_price: 1622,
         discount: 20,
         type: "T-Shirt",
+        id: 003,
+        quant: 1
     },
     {
         image: {
@@ -60,6 +66,8 @@ products = [
         offer_price: 898,
         discount: 40,
         type: "T-Shirt",
+        id: 004,
+        quant: 1
     },
     {
         image: {
@@ -74,6 +82,8 @@ products = [
         offer_price: 1479,
         discount: 70,
         type: "Jacket",
+        id: 005,
+        quant: 1
     },
     {
         image: {
@@ -88,6 +98,8 @@ products = [
         offer_price: 1500,
         discount: 45,
         type: "pant",
+        id: 006,
+        quant: 1
     },
     {
         image: {
@@ -102,6 +114,8 @@ products = [
         offer_price: "",
         discount: 40,
         type: "pant",
+        id: 20,
+        quant: 1
     },
     {
         image: {
@@ -116,6 +130,8 @@ products = [
         offer_price: 1487,
         discount: 25,
         type: "T-Shirt",
+        id: 007,
+        quant: 1
     }
     ,
     {
@@ -131,6 +147,8 @@ products = [
         offer_price: 1574,
         discount: 25,
         type: "Shorts",
+        id: 08,
+        quant: 1
     },
     {
         image: {
@@ -145,6 +163,8 @@ products = [
         offer_price: 1616,
         discount: 23,
         type: "T-Shirt",
+        id: 09,
+        quant: 1
     },
     {
         image: {
@@ -159,6 +179,8 @@ products = [
         offer_price: 1642,
         discount: 11,
         type: "pant",
+        id: 010,
+        quant: 1
     },
     {
         image: {
@@ -173,6 +195,8 @@ products = [
         offer_price: 1350,
         discount: 33,
         type: "T-Shirt",
+        id: 011,
+        quant: 1
     },
     {
         image: {
@@ -187,6 +211,8 @@ products = [
         offer_price: 1428,
         discount: 62,
         type: "Jacket",
+        id: 012,
+        quant: 1
     },
     {
         image: {
@@ -201,6 +227,8 @@ products = [
         offer_price: 7300,
         discount: 56,
         type: "Jacket",
+        id: 013,
+        quant: 1
     },
     {
         image: {
@@ -215,6 +243,8 @@ products = [
         offer_price: 810,
         discount: 50,
         type: "pant",
+        id: 014,
+        quant: 1
     },
     {
         image: {
@@ -229,6 +259,8 @@ products = [
         offer_price: 1624,
         discount: 30,
         type: "pant",
+        id: 015,
+        quant: 1
     },
     {
         image: {
@@ -243,6 +275,8 @@ products = [
         offer_price: 480,
         discount: 65,
         type: "Shorts",
+        id: 016,
+        quant: 1
     },
     {
         image: {
@@ -257,6 +291,8 @@ products = [
         offer_price: 480,
         discount: 60,
         type: "Shorts",
+        id: 017,
+        quant: 1
     },
     {
         image: {
@@ -271,6 +307,8 @@ products = [
         offer_price: 470,
         discount: 44,
         type: "Shorts",
+        id: 18,
+        quant: 1
     },
     {
         image: {
@@ -285,6 +323,8 @@ products = [
         offer_price: 564,
         discount: 30,
         type: "Shorts",
+        id: 19,
+        quant: 1
     }
 
 
@@ -328,7 +368,7 @@ function display(products) {
         price_div.append(price_discount, price_main, dis);
         div.onclick = () => {
             localStorage.setItem('productdb', JSON.stringify(ele));
-            window.location.href = "specfic.html"
+            window.location.href = "specific.html"
         }
         if (offer == "") {
             div.append(div_img, brand, detail, price_div);
