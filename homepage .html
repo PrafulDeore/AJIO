@@ -8,6 +8,7 @@
       Ajio.com | Shop Online the Latest Fashion in Apparels Brands in India
     </title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./fStyle/fStyles.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -654,13 +655,20 @@
         width="100%"
       />
     </div>
+
+    <!-- footer div -->
+    <div id="toDisplayFooter"></div>
   </body>
 </html>
 <script type="module">
   // to display the nav
   import navbar from "./components/navbar.js  ";
+  import footer from "./footerComponents/footer.js";
   let navDiv = document.getElementById("toDisplayNav");
   navDiv.innerHTML = navbar();
+
+  let footerDiv = document.getElementById("toDisplayFooter");
+  footerDiv.innerHTML = footer();
 
   // ..............................................................................
   let dropDownMens = document.getElementById("toDisplaymen");
