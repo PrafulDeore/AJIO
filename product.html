@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div id="navbar"></div>
+    <div id="main_area">
+        <div id="functionalty">
+
+            <div id="heading">
+                <p>Refine By</p>
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            <div id="filters">
+                <div>
+                    <div class='cate'>
+
+                        <i id="cate_gry_show" class="fas fa-plus"></i>
+                        <i id="cate_gry_hide" class="fas fa-minus"></i>
+                        <p>Categories</p>
+                    </div>
+                    <div id="categories">
+                        <div class='cate_check'>
+                            <input onchange="myfilter()" type="checkbox" name="" id="tshirt"> T-Shirts
+                        </div>
+                        <div class='cate_check'>
+                            <input onchange="myfilter()" type="checkbox" name="" id="jacket"> Jackets
+                        </div>
+                        <div class='cate_check'>
+                            <input onchange="myfilter()" type="checkbox" name="" id="pant"> Pants
+                        </div>
+                        <div class='cate_check'>
+                            <input onchange="myfilter()" type="checkbox" name="" id="shorts"> Shorts
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div>
+                    <div class="pri">
+                        <i id="hide_prices" class="fas fa-minus"></i>
+                        <i id="show_prices" class="fas fa-plus"></i>
+                        <p>Prices</p>
+                    </div>
+                    <div id="price">
+                        <div>
+                            <input type="checkbox" name="" id="r500"> Below Rs. 500
+
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="r1000"> Below Rs. 500-1000
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="r1500"> Below Rs. 1000-1500
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="r2000"> Below Rs. 1500-2000
+                        </div>
+
+                    </div>
+
+                </div>
+                <div>
+                    <div class="brand">
+                        <i id="hide_brand" class="fas fa-minus"></i>
+                        <i id="show_brand" class="fas fa-plus"></i>
+                        <p>Brands</p>
+                    </div>
+                    <div id="brands">
+                        <div>
+                            <input type="checkbox" name="" id="jack"> Jack & Jones
+
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="nicks"> Nike
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="netplay"> NETPLAY
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="levis"> LEVIS
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="mpl"> Mpl Sports
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="adidas"> adidas
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="discount">
+                        <i id="hide_discount" class="fas fa-minus"></i>
+                        <i id="show_discount" class="fas fa-plus"></i>
+
+                        <p>Discount</p>
+                    </div>
+                    <div id="discounts">
+                        <div>
+                            <input type="checkbox" name="" id="d20"> 0-20%
+
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="d40"> 21-40%
+
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="d60">41-60%
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="d80"> 61-80%
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div id="products_div">
+            <h1>Clothing</h1>
+            <div id="sorting">
+                <div id="total_items">Iteams</div>
+                <div id="grid">
+                    <p>
+                        GRID
+                    </p>
+
+                    <div id="grid_3">
+                        <div id="grid3"></div>
+                        <div id="grid3"></div>
+                        <div id="grid3"></div>
+                    </div>
+                    <div id="grid_4">
+                        <div id="grid4"></div>
+                        <div id="grid4"></div>
+                        <div id="grid4"></div>
+                        <div id="grid4"></div>
+
+
+                    </div>
+                </div>
+
+                <div>
+                    <span>SORT BY</span>
+                    <select name="" id="sorting_function">
+                        <option value="">Sort Products</option>
+                        <option value="low">Prices(lowest first)</option>
+                        <option value="High">Prices (highest first)</option>
+                    </select>
+                </div>
+            </div>
+            <div id="products">
+
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+
+    </div>
+
+</body>
+
+
+
+
+
+</html>
+<script src="./scripts/product.js">
+</script>
+<script type="module">
+
+</script>
