@@ -353,6 +353,8 @@
     padding: 10px 60px;
     cursor: pointer;
     font-family: sans-serif;
+    border: transparent;
+    margin-right: 10px;
    
 
  }

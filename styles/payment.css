@@ -185,7 +185,7 @@
   width: 31%;
 }
 .fortext > p {
-  line-height: 10px;
+  line-height: 200%;
   font-weight: 700;
 }
 #forColor,
