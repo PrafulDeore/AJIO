@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  /* position: relative; */
 }
 /* hover over............. */
 #navSec > p:hover {
@@ -109,6 +110,8 @@ body {
   margin-left: 5%;
   background-color: white;
   z-index: 1;
+   /* transition:  2s; */
+  
 }
 .hoverOverCategory {
   display: flex;

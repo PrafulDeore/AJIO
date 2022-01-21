@@ -368,7 +368,7 @@ function display(products) {
         price_div.append(price_discount, price_main, dis);
         div.onclick = () => {
             localStorage.setItem('productdb', JSON.stringify(ele));
-            window.location.href = "specific.html"
+            window.location.href = "./specific_product.html"
         }
         if (offer == "") {
             div.append(div_img, brand, detail, price_div);

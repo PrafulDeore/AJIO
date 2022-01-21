@@ -1,6 +1,7 @@
 @import url("http://fonts.cdnfonts.com/css/lora");
 body {
   font-family: "Source Sans Pro", sans-serif;
+  /* position: relative; */
 }
 #main_area {
   display: flex;
