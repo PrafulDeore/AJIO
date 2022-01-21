@@ -7,12 +7,11 @@ document.getElementById("btnPayment").addEventListener("click", () => {
     if (cardNum.length != 16 && cusName.length == 0 && forcvv.length == 0) {
         alert("Please Enter Valid Card Details");
     } else if (
-        cardNum.length == 16 &&
-        cusName.length != 0 &&
-        forcvv.length != 0
+        cardNum.length == 16
+
     ) {
         // alert("hi");
-        window.location.href = "";
+        window.location.href = "./summaryPage.html";
     }
 });
 document.getElementById("bagt").innerHTML = `Rs ${totalAmt.total_bag.toFixed(
