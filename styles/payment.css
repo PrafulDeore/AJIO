@@ -1,105 +1,55 @@
+  
+   @import url('http://fonts.cdnfonts.com/css/lora');
   *{
       margin: 0px;
   }
   #navbar2{
        position: relative;
     }
-    #nav {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        border-top: 5px solid #2c4152;
-        z-index: 101;
-        background-color: #fff;
-        border-bottom: 1px solid #e0e0e0;
-        margin-top: 0;
+     header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+        padding: 10px;
+        /* width: 100%; */
+        gap: 4%;
+        padding-left: 10%;
         position: fixed;
-        width: 100%;
-        
+        background-color: white;
+
     }
 
-    #nav_img {
-        padding-left: 12%;
-        padding-top: 8%;
-    }
-
-    #right_top {
+    #lower {
+        width: 70%;
         display: flex;
-        margin-left: 50px;
-        /* border: 1px solid red; */
+        justify-content: space-evenly;
+        /* border: 2px solid green !important; */
     }
 
-    #right_top>a,
-    p {
-        margin-right: 15px;
-        text-decoration: none;
-        margin-top: 0px;
-    }
-
-    #right_top {
-        margin-top: 0px;
-
-        height: 35px;
-        margin-left: 100px;
-        padding-bottom: 35px;
-        color: #406786;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 23px;
-        font-family: SourceSansPro;
-        padding-left: 30px;
-    }
-
-    #right_top {
-        color: black;
-    }
-
-    #right_top p:hover {
-        color: teal;
-        cursor: pointer;
-    }
-
-
-    #visit {
-        font-family: SourceSansPro;
-
-        background-color: black;
-        color: white;
-        width: 130px;
-        text-align: center;
-
-        height: 30px;
-    }
-
-    #depart {
-        /* border: 1px solid red; */
-        height: auto;
-        margin-top: 20px;
-        margin-left: 20%;
-        margin-bottom: 10px;
-    }
-
-    #phase {
-        height: 40px;
-        width: 400px;
+    .bottom {
+        /* height: 35px; */
         display: flex;
+        justify-content: center;
+        gap:10px;
+        /* border:1px solid green */
+        /* margin-left: 15px; */
+        align-items: center;
+
     }
 
-    #phase_t {
-        display: flex;
-         width: 400px;
-         /* border: 1px solid green; */
-         justify-content: space-between;
+    .bottom>img {
+        /* height: 35px; */
+        /* margin: 9px; */
+        width: 10%;
+
     }
 
-    #phase_t>p:nth-child(2) {
-        margin-left: 60px;
-    }
-
-    .line {
-        margin-top: 15px;
-        background-color: rgb(175, 200, 221);
-        height: 2px;
-        width: 100%;
+    .bottom>p {
+        margin-top: 2px;
+        padding-top: 8px;
+        color: rgb(221, 181, 109);
+        font-size: 13px;
     }
 
     /* ------------------------------------------------------------------------------ */
@@ -121,16 +71,20 @@
 
 #paymentOffer {
   width: 100%;
-  height: 15%;
+  /* height: 15%; */
   /* border: 1px solid red; */
   display: flex;
+  margin-bottom: 30px;
+  /* align-items: center; */
 }
 #paymentOffer1,
 #paymentoffer2 {
+  padding: 10px 20px ;
   width: 50%;
-  height: 90%;
+  /* height: 90%; */
   border: 1px dashed grey;
   display: flex;
+  align-items: center;
 }
 #payment1Img,
 #payment2Img {
@@ -138,12 +92,14 @@
   height: 50%;
   /* border: 1px solid blue; */
   text-align: center;
-  margin-top: 9%;
+  /* margin-top: 9%; */
 }
 #payment1txt,
 #payment2txt {
   width: 80%;
   height: 100%;
+    font-size: 13px;
+    font-family: 'Source Sans Pro';
   /* border: 1px solid green; */
 }
 #payment1Img > img,
@@ -153,7 +109,7 @@
 #payment1txt > p,
 #payment2txt > p {
   font-weight: normal;
-  font-size: 15px;
+  /* font-size: 15px; */
   line-height: 140%;
 }
 #payment1txt > p > a,
@@ -161,9 +117,11 @@
   text-decoration: none;
 }
 #loyalpoints {
-  /* border: 1px solid red; */
+  margin-top: 30px;
+  border: 1px solid lightgray;
   width: 100%;
-  height: 200px;
+  height: 180px;
+  margin-bottom: 25px;
 }
 #firstL,
 #secondL {
@@ -198,14 +156,18 @@
   height: 500px;
   /* border: 1px solid orange; */
   display: flex;
+  margin-top: 25px;
 }
 #paymantMethod {
-  width: 25%;
-  /* border: 1px solid purple; */
+  width: 27%;
+  border: 1px solid lightgray;
   height: 40%;
 }
-#paymantMethod {
+#paymantMethod p{
+  padding: 5px 5px ;
   background-color: #fafafa;
+   font-weight: 600;
+   font-size: 14px;
 }
 #cord > p {
   color: #c0af94;
@@ -213,12 +175,13 @@
 }
 #cord {
   background-color: white;
-  border: 1px solid white;
+  border-bottom: 1px solid lightgray;
+  /* border-left: none; */
 }
 #cardDetails {
   width: 75%;
   height: 90%;
-  /* border: 1px solid red; */
+  border: 1px solid lightgray;
 }
 #cardDetails > input,
 #cardDetails > label {
@@ -273,17 +236,23 @@
 }
 #btnPayment {
   margin-top: 3%;
-  padding: 1%;
+  padding: 10px 7px;
   border: none;
   width: 33%;
   background-color: #d5a249;
   color: white;
-  font-size: 20px;
+  font-size: 14px;
+  font-weight: 600;
 }
 #rightPayment {
   /* border: 1px solid pink; */
   width: 25%;
   height: 300px;
+}
+#checkbox_s{
+  padding-left: 20px;
+  margin-top: 24px;
+
 }
 /* .orderSummary {
   display: flex;
@@ -304,6 +273,7 @@
 
   width: 89%;
   background-color: rgb(250, 250, 250);
+  font-family: 'lora';
 
   /* margin-left: 200px; */
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
@@ -353,4 +323,10 @@
   font-size: 12px;
   font-weight: 600;
   font-family: "SourceSansPro";
+}
+#bags{
+  color:#d5a249;
+}
+#bagp1{
+  font-weight: 600;
 }

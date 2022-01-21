@@ -9,44 +9,47 @@
     <title>Paymet | AJIO</title>
     <link rel="stylesheet" href="./styles/payment.css" />
 </head>
+<style>
+
+
+</style>
 
 <body>
     <div id="navbar2">
-        <div id="nav">
-            <div id="nav_img">
+        <header>
+            <div id="nav1_img">
                 <a href="index.html">
                     <img height="35px" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="" />
                 </a>
             </div>
-            <div id="depart">
-                <div id="phase">
-                    <img height="35px"
-                        src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBhZ7jQJbXZoSfo6Rg1Zzd6vHQRgXVVw3iZ6WiztkSxjaQnCTe"
-                        alt="" />
-                    <div class="line"></div>
-                    <img height="35px" style="border-radius: 50% ;"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWunzh4bIHkQqxcMlcmWLlgHcGb-S0NZTS_StUQYJ1TxemMKAa"
-                        alt="" />
-                    <div class="line"></div>
-                    <img height="35px"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT4gFvIs3-NTFT7hmGJJ3ixDi1bQwjHFzDNA&usqp=CAU"
-                        alt="" />
+            <div id="lower">
+                <div class="bottom">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUG6u4Wc87VXcl5c11XXnCr9080OD4TG5hzhyCCwUBW0AK5Hru"
+                        alt="">
+                    <p>SECURE PAYMENTS</p>
                 </div>
-                <div id="phase_t">
-                    <p>Bag</p>
-                    <p>Delivery Details</p>
-                    <p>Payment</p>
+                <div class="bottom">
+                    <img src="https://thumbs.ultracoloringpages.com/coin-coloring-page-3c7562365b4d23f3098bcf5e99c03687.png"
+                        alt="">
+                    <p>CASH ON DELIVERY</p>
+
                 </div>
-            </div>
+                <div class="bottom">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNLSgpPAxPYLRHoOMDAjUUYEzbATKdYsz2nKjdOpFQp-MbrA3u"
+                        alt="">
+                    <p>ASSURED QUALITY</p>
 
-            <div id="right_top">
+                </div>
+                <div class="bottom">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo5yQ23OcboHM0nNNXwVKhCJ9Wf4xewAjwIZxOY79HcsmqaZSh"
+                        alt="">
+                    <p>EASY RETURNS</p>
 
-                <p>My Account</p>
-                <p>Sign out</p>
-                <p>Customer Care</p>
-                <p id="visit">Visit AJIOLUXE</p>
+                </div>
+
+
             </div>
-        </div>
+        </header>
     </div>
     <div id="paymentBody">
         <div id="leftPayment">
@@ -150,6 +153,11 @@
                             <option value="">2034</option>
                         </select>
                         <input type="text" name="" id="forcvv" placeholder="CVV" maxlength="3" />
+
+
+                    </div>
+                    <div id="checkbox_s">
+                        <input type="checkbox" name="" id=""> Save this card securely
                     </div>
                     <button id="btnPayment">Secure</button>
                     <p>By placing order you agree to AJIO's T&C</p>
@@ -159,8 +167,8 @@
         </div>
         <div id="rightPayment">
             <div id="payment_box">
-                <div id="one">What is AJIO Wallet?</div>
-                <h4>Order Details</h4>
+
+                <h4>Order Summary</h4>
                 <div id="price">
                     <div>
                         <p>Bag total</p>
@@ -174,15 +182,20 @@
                         <p>Delivery</p>
                         <p>FREE</p>
                     </div>
+                    <div>
+                        <p><b>Total Order</b></p>
+                        <p id="bagp1">FREE</p>
+                    </div>
                     <div id="forTotal">
-                        <h4>Total Amount</h4>
+                        <h4> Amount Payable</h4>
                         <h4 id="bagp"></h4>
                     </div>
                 </div>
             </div>
-            <a href="#"><button id="pay_btn">PROCEED TO SHIPPING</button></a>
+
         </div>
     </div>
+
 </body>
 
 </html>

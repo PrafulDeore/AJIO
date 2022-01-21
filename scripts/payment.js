@@ -18,9 +18,15 @@ document.getElementById("btnPayment").addEventListener("click", () => {
 document.getElementById("bagt").innerHTML = `Rs ${totalAmt.total_bag.toFixed(
     2
 )}`;
-document.getElementById("bags").innerHTML = `Rs ${totalAmt.total_save.toFixed(
+document.getElementById("bags").innerHTML = `- Rs ${totalAmt.total_save.toFixed(
     2
 )}`;
 document.getElementById("bagp").innerHTML = `Rs ${totalAmt.total_price.toFixed(
     2
 )}`;
+document.getElementById("bagp1").innerHTML = `Rs ${totalAmt.total_price.toFixed(
+    2
+)}`;
+document.getElementById('btnPayment').innerHTML = `PAY Rs. ${totalAmt.total_price.toFixed(
+    2
+)} SECURELY`
