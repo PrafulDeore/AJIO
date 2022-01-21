@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>cartPage</title>
+</head>
+<style>
+    #root_div{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        gap: 30px;
+        
+
+    }
+     #container_main{
+        height: auto;
+        width: 80%;
+        margin:auto; 
+        border: 1px solid black;
+        
+    } 
+    #container{
+        display: flex;
+         gap: 50px; 
+    }
+    .img{
+        height: 50px;
+        width: 10%;
+        
+
+    }
+    .div_img{
+    width:20%;
+}
+.div_img>img{
+    width:50%;
+}
+
+#btn_div{
+    height: 50px;
+    display: flex;
+    gap: 20px;
+   
+}
+.delete_btn{
+    
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.move_btn{
+    border: none;
+    background: none;
+    cursor: pointer;
+
+}
+#ORDER_DIV{
+    border: 1px solid black;
+    width: 20%;
+}
+.order1{
+    border: 1px solid rgb(196, 22, 22);
+    height: 500px;
+    width: 100%;
+
+}
+.order2{
+    border: 2px solid black;
+    height: 500px;
+    width: 100%;
+}
+.chota{
+    height: 10px;
+    width: 100%;
+    margin-left: 80px;
+    border: none;
+}
+
+
+    
+</style>
+<body>
+    <div id="root_div">
+        
+    <div id="container_main">
+        
+       
+         <!-- <div class="box1"> 
+           <div class="leftbox">
+               <img src="" alt="" id=""/>
+               
+           </div>
+        </div>
+        <div class="box2" ></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>    -->
+    </div>
+    <div id="ORDER_DIV">
+        <div class="order1">
+            <div class="chota">What is AJIO Wallet?</div>
+        </div>
+        <div class="order2">
+             
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
+<script>
+    products = [
+        
+           
+             {
+               image:
+               {
+
+               
+                img1: "https://assets.ajio.com/medias/sys_master/root/20211115/cBXP/61927ce4aeb2690110c4958c/-1117Wx1400H-460982469-red-MODEL.jpg",
+                img2: "https://assets.ajio.com/medias/sys_master/root/20211115/8GgO/6192827eaeb2690110c4b1cc/-1117Wx1400H-460982469-red-MODEL2.jpg",
+                img3: "https://assets.ajio.com/medias/sys_master/root/20211115/tTEn/61927a9baeb2690110c48b4e/-1117Wx1400H-460982469-red-MODEL3.jpg"
+            },
+            
+            name: "Product By Jack & Jones",
+            details: "Quilted Jacket with Zipper Pockets",
+            main_price: 3499,
+            discount_price: 1924,
+            offer_price: 1575,
+            discount: "45%",
+            type: "Jacket",
+        },
+        {
+            image: {
+                img1: "https://assets.ajio.com/medias/sys_master/root/20211228/Kk50/61ca0750f997ddf8f1630d62/-1117Wx1400H-469047349-blue-MODEL.jpg",
+                img2: "https://assets.ajio.com/medias/sys_master/root/20211228/4LcF/61ca3706aeb26901101f785a/-1117Wx1400H-469047349-blue-MODEL2.jpg",
+                img3: "https://assets.ajio.com/medias/sys_master/root/20211228/cfJj/61ca2f18aeb26901101f1709/-1117Wx1400H-469047349-blue-MODEL3.jpg"
+            },
+            name: "Product By Jack & Jones",
+            details: "Urban Pro Panelled Washed Jacket",
+            main_price: 2799,
+            discount_price: 1400,
+            offer_price: 1260,
+            discount: "50%",
+            type: "Jacket",
+        },
+        {
+            image: {
+                img1: "https://assets.ajio.com/medias/sys_master/root/20211223/EyoW/61c370b7aeb2690110178ca6/-1117Wx1400H-469038395-green-MODEL.jpg",
+                img2: "https://assets.ajio.com/medias/sys_master/root/20211223/lnbv/61c373c6aeb2690110179642/-1117Wx1400H-469038395-green-MODEL2.jpg",
+                img3: "https://assets.ajio.com/medias/sys_master/root/20211223/5nm4/61c36fb6aeb26901101789ac/-1117Wx1400H-469038395-green-MODEL3.jpg"
+            },
+            name: "Nike",
+            details: "Geometric Self-Print Crew-Neck T-shirt",
+            main_price: 2495,
+            discount_price: 1996,
+            offer_price: 1622,
+            discount: "20%",
+            type: "T-Shirt",
+        },
+        {
+            image: {
+                img1: "https://assets.ajio.com/medias/sys_master/root/20211103/cm56/61819c8caeb2690110b7aea1/-1117Wx1400H-441126481-blue-MODEL.jpg",
+                img2: "https://assets.ajio.com/medias/sys_master/root/20211103/DT5w/618184b4aeb2690110b74416/-1117Wx1400H-441126481-blue-MODEL2.jpg",
+                img3: "https://assets.ajio.com/medias/sys_master/root/20211103/EyMw/6181893aaeb2690110b7532d/-1117Wx1400H-441126481-blue-MODEL3.jpg"
+            },
+            name: "NETPLAY",
+            details: "Art Deco Print High-Neck Zip-Front Sweatshirt with Insert Pockets",
+            main_price: 1499,
+            discount_price: 899,
+            offer_price: 898,
+            discount: "40%",
+            type: "T-Shirt",
+        },
+        {
+            image: {
+                img1: "https://assets.ajio.com/medias/sys_master/root/20211208/I1j8/61aff282f997ddf8f14624ac/-1117Wx1400H-469057915-black-MODEL.jpg",
+                img2: "https://assets.ajio.com/medias/sys_master/root/20211208/6afO/61afbea6aeb2690110ffa430/-1117Wx1400H-469057915-black-MODEL4.jpg",
+                img3: "https://assets.ajio.com/medias/sys_master/root/20211208/rJQd/61affb24f997ddf8f146a3d9/-1117Wx1400H-469057915-black-MODEL2.jpg"
+            },
+            name: "NETPLAY",
+            details: "Zip-Front Slim Fit Biker Jacket",
+            main_price: 5099,
+            discount_price: 1530,
+            offer_price: 1479,
+            discount: "70%",
+            type: "Jacket",
+        },
+        {
+            image: {
+                img1: "https://assets.ajio.com/medias/sys_master/root/20211112/YnUW/618e8e36f997ddf8f1039042/-1117Wx1400H-460971297-black-MODEL.jpg",
+                img2: "https://assets.ajio.com/medias/sys_master/root/20211112/gsb1/618e91e1f997ddf8f1039e33/-1117Wx1400H-460971297-black-MODEL2.jpg",
+                img3: "https://assets.ajio.com/medias/sys_master/root/20211112/poYi/618e83f8f997ddf8f10353f9/-1117Wx1400H-460971297-black-MODEL3.jpg"
+            },
+            name: "LEVIS",
+            details: "Mid-Rise Slim Fit Jeans",
+            main_price: 2999,
+            discount_price: 1649,
+            offer_price: 1500,
+            discount: "45%",
+            type: "pant",
+        },
+        {
+            image: {
+                img1: "https://assets.ajio.com/medias/sys_master/root/20211202/gXWj/61a8e073f997ddf8f12e170f/-1117Wx1400H-469043836-black-MODEL.jpg",
+                img2: "https://assets.ajio.com/medias/sys_master/root/20211202/UodB/61a8e1fcf997ddf8f12e2055/-1117Wx1400H-469043836-black-MODEL3.jpg",
+                img3: "https://assets.ajio.com/medias/sys_master/root/20211202/HLE0/61a8e1eef997ddf8f12e1f9b/-1117Wx1400H-469043836-black-MODEL5.jpg"
+            },
+            name: "Mpl Sports",
+            details: "Straight Trackpants with Insert Pockets",
+            main_price: 2299,
+            discount_price: 1379,
+            offer_price: "",
+            discount: "40%",
+            type: "pant",
+        }
+    ]
+    let parent_div = document.getElementById("container_main")
+   
+
+    products.map(function(ele)
+  {
+        let div = document.createElement("div")
+        div.setAttribute("id","container")
+        
+        let div1 = document.createElement("div")
+        let image = document.createElement("img")
+        div1.setAttribute("class", "div_img")
+        image.setAttribute("src",ele.image.img1);
+        let name = document.createElement("p")
+        name.textContent = ele.name
+
+        let price = document.createElement("p")
+        price.textContent = `PRICE RS ${ele.main_price}`
+
+        let offer = document.createElement("p")
+        offer.textContent = `OFFER PRICE ${ele.offer_price}`
+
+
+        let discount_div = document.createElement("div")
+        let discount = document.createElement("p")
+        discount.textContent =  `DISCOUNT ${ele.discount}`
+        let btn_div = document.createElement("div")
+        btn_div.setAttribute("id","btn_div")
+
+        let delete_btn = document.createElement("button")
+        delete_btn.textContent = "DELETE"
+        delete_btn.setAttribute("class","delete_btn")
+      
+        let move_btn = document.createElement("button")
+        move_btn.textContent = "MOVE CLOSET"
+        move_btn.setAttribute("class","move_btn")
+
+        btn_div.append(delete_btn,move_btn)
+
+
+        discount_div.append(discount)
+
+
+
+         div1.append(image)
+
+         div.append(div1,name,price,offer,discount_div,btn_div)
+
+          parent_div.append(div)
+
+
+
+
+
+
+
+    });
+    
+</script>
