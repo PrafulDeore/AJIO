@@ -102,11 +102,11 @@ closetBtn.addEventListener("click",dataforCloset);
         console.log("closet",closet)
     }
 
-var cBTn=document.getElementById("cBtn");
-cBtn.addEventListener("click",gotoCloset);
-function gotoCloset(){
-  location.href = 'closet.html'
-}
+// var cBtn=document.getElementById("cBtn");
+// cBtn.addEventListener("click",gotoCloset);
+// function gotoCloset(){
+//   location.href = 'closet.html'
+// }
 // When we click on left-side small images they are display in main box-------------->
     small_image1.addEventListener("click", showImg1);
     function showImg1(ele) {
