@@ -1,3 +1,5 @@
+let totalAmt = JSON.parse(localStorage.getItem("Total_bag")) || [];
+
 document.getElementById("btnPayment").addEventListener("click", () => {
   let cardNum = document.getElementById("cardNum").value;
   let cusName = document.getElementById("nameOncard").value;
@@ -13,3 +15,12 @@ document.getElementById("btnPayment").addEventListener("click", () => {
     window.location.href = "";
   }
 });
+document.getElementById("bagt").innerHTML = `Rs ${totalAmt.total_bag.toFixed(
+  2
+)}`;
+document.getElementById("bags").innerHTML = `Rs ${totalAmt.total_save.toFixed(
+  2
+)}`;
+document.getElementById("bagp").innerHTML = `Rs ${totalAmt.total_price.toFixed(
+  2
+)}`;

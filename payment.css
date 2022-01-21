@@ -1,12 +1,12 @@
 #paymentBody {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 90%;
   margin: auto;
   display: flex;
   gap: 2%;
 }
 #leftPayment {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 75%;
   height: 950px;
 }
@@ -36,7 +36,7 @@
 #payment2txt {
   width: 80%;
   height: 100%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 #payment1Img > img,
 #payment2Img > img {
@@ -53,7 +53,7 @@
   text-decoration: none;
 }
 #loyalpoints {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   height: 200px;
 }
@@ -62,11 +62,11 @@
   height: 50%;
   width: 100%;
   display: flex;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 .forcheckbox {
   width: 6%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 40%;
   margin-top: 2%;
   margin-left: 2%;
@@ -88,12 +88,12 @@
 #paymentOption {
   width: 100%;
   height: 500px;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   display: flex;
 }
 #paymantMethod {
   width: 25%;
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   height: 40%;
 }
 #paymantMethod {
@@ -110,7 +110,7 @@
 #cardDetails {
   width: 75%;
   height: 90%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 #cardDetails > input,
 #cardDetails > label {
@@ -121,7 +121,7 @@
   justify-content: space-between;
   width: 60%;
   height: 10%;
-  border: 1px solid orangered;
+  /* border: 1px solid orangered; */
 }
 .forMonth {
   width: 30%;
@@ -173,7 +173,7 @@
   font-size: 20px;
 }
 #rightPayment {
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
   width: 25%;
   height: 300px;
 }
@@ -213,9 +213,9 @@
   margin-bottom: 10px;
   font-size: 16px;
 }
-#bagp {
+/* #bagp {
   margin-right: 20px;
-}
+} */
 
 #price > div > p,
 #price > div > h4 {
