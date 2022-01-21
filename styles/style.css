@@ -17,11 +17,12 @@ body {
 }
 /* hover over */
 #navbar {
-  /* border: 1px solid red;  */
-  /* position: ;  */
-  z-index: 1000;
+  /* border: 1px solid red; */
+  /* position: absolute;
+  z-index: 1000; */
   height: 95px;
   display: flex;
+  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 #rightNav {
@@ -100,9 +101,10 @@ body {
 }
 
 .onHoverOver {
-  border: 1px solid white;
+  border: 1px solid black;
   height: 600px;
   position: absolute;
+  /* margin-top: 7%; */
   width: 90%;
   margin-left: 5%;
   background-color: white;
@@ -136,7 +138,7 @@ body {
 }
 .dropdownClass {
   width: 25%;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   margin-left: 2%;
 }
 #toDisplaywomen1,

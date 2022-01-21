@@ -660,6 +660,7 @@
     <div id="toDisplayFooter"></div>
   </body>
 </html>
+
 <script type="module">
   // to display the nav
   import navbar from "./components/navbar.js  ";
@@ -670,10 +671,11 @@
   let footerDiv = document.getElementById("toDisplayFooter");
   footerDiv.innerHTML = footer();
 
-  // ..............................................................................
-  let dropDownMens = document.getElementById("toDisplaymen");
-  let mainDiv = document.getElementById("toDisplaywomen1");
-  // to closet
+  document.getElementById("ajioLogo").addEventListener("click", () => {
+    window.location.href = "index.html";
+    console.log("hu");
+  });
+  // go to closest
   document.getElementById("hangerImg").addEventListener("click", () => {
     window.location.href = "closet.html";
   });
@@ -682,6 +684,9 @@
   document.getElementById("bagImg").addEventListener("click", () => {
     window.location.href = "bag.html";
   });
+
+  let dropDownMens = document.getElementById("toDisplaymen");
+  let mainDiv = document.getElementById("toDisplaywomen1");
 
   dropDownMens.addEventListener("mouseover", function () {
     document.getElementById("toDisplaymen1").style.display = "block";
@@ -819,13 +824,9 @@
     document.getElementById("forSignup2").style.display = "none";
   });
 
-  //
-  document.getElementById("ajioLogo").addEventListener("click", () => {
-    window.location.href = "index.html";
-    // console.log("hu");
-  });
   // end ofdisplay
   // Slider 1 Start
+
   let i = 0;
   let slider1Images = [];
   slider1Images[0] =
