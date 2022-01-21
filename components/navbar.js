@@ -183,7 +183,7 @@ function navbar() {
       <div id="bag-nav-ajio">
         <img
             id="bagImg"
-            src="https://cdn-icons.flaticon.com/png/512/2662/premium/2662503.png?token=exp=1642538432~hmac=cd142899405e668ec7f0139ef20a0269"
+            src="https://cdn-icons.flaticon.com/png/128/2662/premium/2662503.png?token=exp=1642766573~hmac=56581404002086d689c944a1eea461a7"
             alt=""
         />
       </div>
