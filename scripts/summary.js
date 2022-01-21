@@ -103,6 +103,6 @@ document.getElementById('btn_final2').onclick = () => {
 document.getElementById('btn_final').onclick = () => {
 
     bag_arr = [];
-    // localStorage.setItem('bagItems', JSON.stringify(bag_arr));
+    localStorage.setItem('bagItems', JSON.stringify(bag_arr));
     window.location.href = "./index.html";
 }
