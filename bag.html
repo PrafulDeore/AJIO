@@ -236,14 +236,14 @@
         total_bag,
         total_price
     }
-    function bag_final() {
-        document.getElementById('bagt').innerHTML = `Rs. ${total_bag.toFixed(2)}`;
-        document.getElementById('bags').innerHTML = `Rs. ${total_save.toFixed(2)}`;
-        document.getElementById('bagp').innerHTML = `Rs. ${total_price.toFixed(2)}`;
-        localStorage.setItem('total_bag', JSON.stringify(final_bag));
-        display_bag(bag_arr);
-    }
-    bag_final()
+
+    document.getElementById('bagt').innerHTML = `Rs. ${total_bag.toFixed(2)}`;
+    document.getElementById('bags').innerHTML = `Rs. ${total_save.toFixed(2)}`;
+    document.getElementById('bagp').innerHTML = `Rs. ${total_price.toFixed(2)}`;
+    localStorage.setItem('total_bag', JSON.stringify(final_bag));
+    // display_bag(bag_arr);
+
+
 
 
     function mydelete(index) {
