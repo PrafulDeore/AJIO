@@ -77,7 +77,7 @@
           <div id="cardDetails">
             <p id="addCArd">Add New Card</p>
             <label for="">Card Number</label>
-            <input type="number" name="" id="cardNum" />
+            <input type="number" name="" id="cardNum" 11 />
             <label for="">Name on Card</label>
             <input type="text" name="" id="nameOncard" />
             <div id="forexpCvv">
@@ -114,7 +114,13 @@
                 <option value="">2033</option>
                 <option value="">2034</option>
               </select>
-              <input type="number" name="" id="forcvv" placeholder="CVV" />
+              <input
+                type="text"
+                name=""
+                id="forcvv"
+                placeholder="CVV"
+                maxlength="3"
+              />
             </div>
             <button id="btnPayment">Secure</button>
             <p>By placing order you agree to AJIO's T&C</p>
@@ -148,3 +154,4 @@
     </div>
   </body>
 </html>
+<script src="./paymentscript/payment.js"></script>
