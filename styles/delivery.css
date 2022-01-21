@@ -91,6 +91,9 @@
     background-color: #fff;
     border-bottom: 1px solid #e0e0e0;
     margin-top: 0;
+    position: fixed;
+    width: 100%;
+    
   }
   #nav_img {
     padding-left: 12%;
@@ -151,13 +154,15 @@
     width: 400px;
     display: flex;
   }
-
-  #phase_t {
+ #phase_t {
     display: flex;
+    width: 120%;
+    justify-content: space-between;
+
   }
-  #phase_t > p {
+  /* #phase_t > p {
     margin: auto;
-  }
+  } */
   .line {
     margin-top: 15px;
     background-color: rgb(155, 142, 142);
@@ -287,6 +292,7 @@
       display: flex;
       justify-content: space-between;
       padding: 30px;
+      margin-top: 6%;
   }
   #one{
       background-color:rgb(254,251,228);
@@ -316,7 +322,7 @@
  }
  .modal-bg{
     
-     
+     z-index: 1000;
      position: fixed;
      width:100%;
      height: 100vh;

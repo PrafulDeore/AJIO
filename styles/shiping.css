@@ -10,6 +10,8 @@
     background-color: #fff;
     border-bottom: 1px solid #e0e0e0;
     margin-top: 0;
+    position: fixed;
+    width: 100%;
   }
   #nav_img {
     padding-left: 12%;
@@ -73,10 +75,13 @@
 
   #phase_t {
     display: flex;
+    width: 120%;
+    justify-content: space-between;
+
   }
-  #phase_t > p {
-    margin: auto;
-  }
+  /* #phase_t > p {
+    /* margin: auto; */
+  /* }  */
   .line {
     margin-top: 15px;
     background-color: rgb(155, 142, 142);
@@ -186,6 +191,7 @@
       display: flex;
       justify-content: space-between;
       padding: 30px 40px;
+       margin-top: 6%;
   }
  #payment_main {
     margin-top:50px;

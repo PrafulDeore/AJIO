@@ -34,7 +34,7 @@
         gap:10px;
         /* border:1px solid green */
         /* margin-left: 15px; */
-        align-items: center;
+        /* align-items: flex-start; */
 
     }
 
@@ -46,10 +46,11 @@
     }
 
     .bottom>p {
-        margin-top: 2px;
+        /* margin-top: 2px; */
         padding-top: 8px;
         color: rgb(221, 181, 109);
         font-size: 13px;
+        
     }
 
     /* ------------------------------------------------------------------------------ */
