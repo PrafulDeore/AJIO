@@ -102,7 +102,7 @@ body {
 }
 
 .onHoverOver {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 600px;
   position: absolute;
   /* margin-top: 7%; */
@@ -141,7 +141,7 @@ body {
 }
 .dropdownClass {
   width: 25%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin-left: 2%;
 }
 #toDisplaywomen1,
@@ -198,7 +198,7 @@ p {
 #forSignup1,
 #forSignup2 {
   width: 28%;
-  border: 1px solid teal;
+  /* border: 1px solid teal; */
   position: absolute;
   height: 780px;
   margin-left: 36%;
