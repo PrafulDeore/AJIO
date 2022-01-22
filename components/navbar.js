@@ -57,7 +57,7 @@ function navbar() {
   <div id="loginClose1">
     <img
       id="crossImg1"
-      src="https://cdn-icons.flaticon.com/png/512/2976/premium/2976286.png?token=exp=1642570065~hmac=dc4ca94997963892efc8afa9c8b22b96"
+      src="./images/close.png"
       alt=""
     />
   </div>
@@ -132,7 +132,7 @@ function navbar() {
   <div id="loginClose2">
     <img
       id="crossImg2"
-      src="https://cdn-icons.flaticon.com/png/512/2976/premium/2976286.png?token=exp=1642570065~hmac=dc4ca94997963892efc8afa9c8b22b96"
+      src="./images/close.png"
       alt=""
     />
   </div>
