@@ -74,11 +74,15 @@ function footer() {
           <p>Secure systems</p>
         </div>
         <div id="fourtnsub2">
-          <div><img src="" alt="" /></div>
-          <div><img src="" alt="" /></div>
-          <div><img src="" alt="" /></div>
-          <div><img src="" alt="" /></div>
-          <div><img src="" alt="" /></div>
+          <div><img src="https://assets.ajio.com/static/peassets/public/icons/Net-Banking.svg" alt="" /></div>
+          <div><img src="https://assets.ajio.com/static/peassets/public/icons/visa.svg
+" alt="" /></div>
+          <div><img src="https://assets.ajio.com/static/peassets/public/icons/MasterCard.svg
+" alt="" /></div>
+          <div><img src="https://assets.ajio.com/static/peassets/public/icons/Jio-Money.svg
+" alt="" /></div>
+          <div><img src="https://assets.ajio.com/static/peassets/public/icons/COD.svg
+" alt="" /></div>
         </div>
       </div>
     </div>
