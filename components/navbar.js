@@ -534,35 +534,35 @@ function navbar() {
   <div><p>Top Search</p></div>
 
   <div>
-    <a href=""><p>Shoes</p></a>
+    <a href="./product.html"><p>Shoes</p></a>
   </div>
   <div>
-    <a href=""><p>Jackets</p></a>
+    <a href="./product.html"><p>Jackets</p></a>
   </div>
   <div>
-    <a href=""></a>
+    <a href="./product.html"></a>
     <p>Jeans</p>
   </div>
   <div>
-    <a href=""><p>joggers</p></a>
+    <a href="./product.html"><p>joggers</p></a>
   </div>
   <div>
-    <a href=""><p>Kurti</p></a>
+    <a href="./product.html"><p>Kurti</p></a>
   </div>
   <div>
-    <a href=""><p>Boots</p></a>
+    <a href="./product.html"><p>Boots</p></a>
   </div>
   <div>
-    <a href=""><p>Shirts</p></a>
+    <a href="./product.html"><p>Shirts</p></a>
   </div>
   <div>
-    <a href=""><p>Top</p></a>
+    <a href="./product.html"><p>Top</p></a>
   </div>
   <div>
-    <a href=""><p>Heels</p></a>
+    <a href="./product.html"><p>Heels</p></a>
   </div>
   <div>
-    <a href=""><p>Sneaker</p></a>
+    <a href="./product.html"><p>Sneaker</p></a>
   </div>
 </div>
 `;
