@@ -3,7 +3,7 @@ function navbar() {
   <div id="loginClose">
     <img
       id="crossImg"
-      src="https://cdn-icons.flaticon.com/png/512/2976/premium/2976286.png?token=exp=1642570065~hmac=dc4ca94997963892efc8afa9c8b22b96"
+      src="./images/close.png"
       alt=""
     />
   </div>
@@ -183,7 +183,7 @@ function navbar() {
       <div id="bag-nav-ajio">
         <img
             id="bagImg"
-            src="https://cdn-icons.flaticon.com/png/128/2662/premium/2662503.png?token=exp=1642766573~hmac=56581404002086d689c944a1eea461a7"
+            src="./images/bag.png"
             alt=""
         />
       </div>

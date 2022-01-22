@@ -17,7 +17,7 @@ function footer() {
       </div>
       <div id="assuredQ">
         <img
-          src="https://cdn-icons.flaticon.com/png/128/3002/premium/3002398.png?token=exp=1642625916~hmac=d030759b7bd5c6d1e822e8c81a61e0d6"
+          src="./images/setting.jpg"
           alt=""
         />
         <p>ASSURED QUALITY</p>
