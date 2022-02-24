@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 * {
     margin: 0px;
     padding: 0px;
@@ -62,3 +63,102 @@
     color: rgb(211, 152, 64);
 
   }
+=======
+/* * {
+    margin: 0px;
+    padding: 0px;
+  } */
+#navbar {
+  /* border: 1px solid black; */
+  /* height: 100px; */
+}
+#container {
+  /* border: 1px solid red; */
+  height: 800px;
+  margin-top: 2%;
+}
+#container #title {
+  /* border: 1px solid red; */
+  font-family: "Lora", serif;
+  font-weight: bolder;
+  font-size: 32px;
+  text-align: center;
+}
+#main_container {
+  /* border: 1px solid rgb(66, 114, 12); */
+  /* height: 10000px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5%;
+}
+#div {
+  width: 300px;
+  /* height: 180px; */
+  margin: 11%;
+  /* border: 1px solid red; */
+}
+#pimg {
+  width: 100%;
+}
+#pName {
+  text-align: center;
+  font-family: "Source Sans Pro";
+  font-size: 26px;
+  font-weight: bolder;
+  color: rgb(211, 152, 64);
+}
+#pDetails {
+  font-family: "Lora", serif;
+}
+#pPrice {
+  font-size: 25px;
+  font-weight: bolder;
+  display: inline-block;
+  margin-left: 5%;
+}
+#mainPrice {
+  font-size: 20px;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-left: 5%;
+}
+#pDiscount {
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 5%;
+  color: rgb(211, 152, 64);
+}
+
+#addtoBag{
+  width: 90%;
+  margin-left: 15px;
+  height: 40px;
+  font-size: 23px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family: "Source Sans Pro";
+  cursor: pointer;
+  background-color: rgb(239,239,239);
+}
+
+#deleteButton{
+  width: 90%;
+  margin-left: 15px;
+  height: 40px;
+  font-size: 23px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  font-family: "Source Sans Pro";
+  cursor: pointer;
+  background-color: rgb(239,239,239);
+}
+
+#addtoBag:active{
+  color: rgb(36, 170, 47);
+  background-color: rgb(255, 255, 255);
+}
+#deleteButton:active{
+  color: red;
+  background-color: rgb(255, 255, 255);
+}
+>>>>>>> Stashed changes

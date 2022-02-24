@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="en">
 
@@ -441,4 +442,349 @@
 
     
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="https://assets.ajio.com/static/img/favicon.ico">
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/product.css" />
+  <link rel="stylesheet" href="fStyle/fStyles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <title>Product | AJIO</title>
+</head>
+<style>
+  #navbar12 {
+    width: 100%;
+  }
+</style>
+
+<body>
+
+  <div id="navbar12"></div>
+
+
+  <div id="main_area">
+    <div id="functionalty">
+      <div id="heading">
+        <p>Refine By</p>
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <div id="filters">
+        <div>
+          <div class="cate">
+            <i id="cate_gry_show" class="fas fa-plus"></i>
+            <i id="cate_gry_hide" class="fas fa-minus"></i>
+            <p>Categories</p>
+          </div>
+          <div id="categories">
+            <div class="cate_check">
+              <input onchange="myfilter()" type="checkbox" name="" id="tshirt" />
+              T-Shirts
+            </div>
+            <div class="cate_check">
+              <input onchange="myfilter()" type="checkbox" name="" id="jacket" />
+              Jackets
+            </div>
+            <div class="cate_check">
+              <input onchange="myfilter()" type="checkbox" name="" id="pant" />
+              Pants
+            </div>
+            <div class="cate_check">
+              <input onchange="myfilter()" type="checkbox" name="" id="shorts" />
+              Shorts
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="brand">
+            <i id="hide_brand" class="fas fa-minus"></i>
+            <i id="show_brand" class="fas fa-plus"></i>
+            <p>Brands</p>
+          </div>
+          <div id="brands">
+
+            <div><input onchange="myfilter()" type="checkbox" name="" id="nicks" /> Nike</div>
+            <div><input onchange="myfilter()" type="checkbox" name="" id="netplay" /> NETPLAY</div>
+            <div><input onchange="myfilter()" type="checkbox" name="" id="levis" /> LEVIS</div>
+            <div><input onchange="myfilter()" type="checkbox" name="" id="mpl" /> Mpl Sports</div>
+            <div><input onchange="myfilter()" type="checkbox" name="" id="adidas" /> adidas</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="color">
+            <i id="hide_color" class="fas fa-minus"></i>
+            <i id="show_color" class="fas fa-plus"></i>
+
+            <p>Colors</p>
+          </div>
+          <div id="colors">
+            <div><input onchange="myfilter()" type="checkbox" name="" id="blue" />Blue</div>
+            <div><input onchange="myfilter()" type="checkbox" name="" id="red" /> Orange</div>
+            <div><input onchange="myfilter()" type="checkbox" name="" id="green" />Green</div>
+            <div><input onchange="myfilter()" type="checkbox" name="" id="black" /> Black</div>
+          </div>
+        </div>
+        <div>
+          <div class="discount">
+            <i id="hide_discount" class="fas fa-minus"></i>
+            <i id="show_discount" class="fas fa-plus"></i>
+
+            <p>Discount</p>
+          </div>
+          <div id="discounts">
+            <div><input onchange="myfilter()" type="checkbox" name="" id="d20" /> 0-20%</div>
+            <div><input onchange="myfilter()" type="checkbox" name="" id="d40" /> 21-40%</div>
+            <div><input onchange="myfilter()" type="checkbox" name="" id="d60" />41-60%</div>
+            <div><input onchange="myfilter()" type="checkbox" name="" id="d80" /> 61-80%</div>
+          </div>
+        </div>
+        <div>
+          <div class="pri">
+            <i id="hide_prices" class="fas fa-minus"></i>
+            <i id="show_prices" class="fas fa-plus"></i>
+            <p>Prices</p>
+          </div>
+          <div id="price">
+            <div>
+              <input onchange="myfilter()" type="checkbox" name="" id="r700" /> Below Rs. 700
+            </div>
+            <div>
+              <input onchange="myfilter()" type="checkbox" name="" id="r1500" /> Between Rs. 700-1500
+            </div>
+            <div>
+              <input onchange="myfilter()" type="checkbox" name="" id="r2500" /> Between Rs. 1500-2500
+            </div>
+            <div>
+              <input onchange="myfilter()" type="checkbox" name="" id="r2600" /> More than Rs. 2500
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="products_div">
+      <h1>Clothing</h1>
+      <div id="sorting">
+        <div id="total_items">Iteams</div>
+        <div id="grid">
+          <p>GRID</p>
+
+          <div id="grid_3">
+            <div id="grid3"></div>
+            <div id="grid3"></div>
+            <div id="grid3"></div>
+          </div>
+          <div id="grid_4">
+            <div id="grid4"></div>
+            <div id="grid4"></div>
+            <div id="grid4"></div>
+            <div id="grid4"></div>
+          </div>
+        </div>
+
+        <div>
+          <span>SORT BY</span>
+          <select name="" id="sorting_function">
+            <option value="">Sort Products</option>
+            <option value="low">Prices(lowest first)</option>
+            <option value="High">Prices (highest first)</option>
+          </select>
+        </div>
+      </div>
+      <div id="products">
+
+
+      </div>
+      <div id="pagecount">
+        <p>
+
+          <i id="pagecount_previous" class="fas fa-angle-left"></i>
+          <span id="pagenumber"></span>
+          <i id="pagecount_next" class="fas fa-angle-right"></i>
+
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+
+</html>
+
+<script src="./scripts/product.js"></script>
+<script type="module">
+  import navbar from "./components/navbar.js  ";
+  import footer from "./footerComponents/footer.js";
+
+  let navDis = document.getElementById("navbar12");
+  navDis.innerHTML = navbar();
+
+  let footerD = document.getElementById("footer");
+  footerD.innerHTML = footer();
+
+  document.getElementById("ajioLogo").addEventListener("click", () => {
+    window.location.href = "index.html";
+    console.log("hu");
+  });
+  // go to closest
+  document.getElementById("hangerImg").addEventListener("click", () => {
+    window.location.href = "closet.html";
+  });
+
+  // to bag
+  document.getElementById("bagImg").addEventListener("click", () => {
+    window.location.href = "bag.html";
+  });
+
+  let dropDownMens = document.getElementById("toDisplaymen");
+  let mainDiv = document.getElementById("toDisplaywomen1");
+
+  dropDownMens.addEventListener("mouseover", function () {
+    document.getElementById("toDisplaymen1").style.display = "block";
+  });
+  dropDownMens.addEventListener("mouseout", function () {
+    document.getElementById("toDisplaymen1").style.display = "none";
+  });
+
+  let dropDownWomens = document.getElementById("toDisplaywomen");
+  dropDownWomens.addEventListener("mouseover", function () {
+    document.getElementById("toDisplaywomen1").style.display = "block";
+  });
+  dropDownWomens.addEventListener("mouseout", function () {
+    document.getElementById("toDisplaywomen1").style.display = "none";
+  });
+
+  let dropDownKids = document.getElementById("toDisplaykids");
+  dropDownKids.addEventListener("mouseover", function () {
+    document.getElementById("toDisplaykids1").style.display = "block";
+  });
+  dropDownKids.addEventListener("mouseout", function () {
+    document.getElementById("toDisplaykids1").style.display = "none";
+  });
+
+  let indie = document.getElementById("indie");
+  indie.addEventListener("mouseover", function () {
+    document.getElementById("indie1").style.display = "block";
+  });
+  indie.addEventListener("mouseout", function () {
+    document.getElementById("indie1").style.display = "none";
+  });
+
+  let HandM = document.getElementById("handm");
+  HandM.addEventListener("mouseover", function () {
+    document.getElementById("handm1").style.display = "block";
+  });
+  HandM.addEventListener("mouseout", function () {
+    document.getElementById("handm1").style.display = "none";
+  });
+
+  document.getElementById("searchajio").addEventListener("click", function () {
+    document.getElementById("searchresult").style.display = "block";
+  });
+
+  // FOR SIGN UP POP UP
+  document.getElementById("signInJoin").addEventListener("click", function () {
+    document.getElementById("forSignup").style.display = "block";
+  });
+
+  // FOR CLOSING
+  document.getElementById("crossImg").addEventListener("click", () => {
+    document.getElementById("forSignup").style.display = "none";
+  });
+
+  // to display input
+  document.getElementById("forInput").addEventListener("click", () => {
+    document.getElementById("forInput").style.borderBottomColor = "#d5a249";
+  });
+
+  // on continue
+
+  document.getElementById("forSignUpbtn").addEventListener("click", () => {
+    let dataToSend = document.getElementById("forInput").value;
+
+    //   LOCAL STORAGE.............................................................................................
+    localStorage.setItem("mobNum", JSON.stringify(dataToSend));
+    document.getElementById("forSignup").style.display = "none";
+
+    //   gotta write code for signup display
+    document.getElementById("forSignup1").style.display = "block";
+    let data = JSON.parse(localStorage.getItem("mobNum"));
+    console.log(data);
+    document.getElementById("todisplayNum").innerHTML = data;
+  });
+  // for closing the details
+  document.getElementById("crossImg1").addEventListener("click", () => {
+    document.getElementById("forSignup1").style.display = "none";
+  });
+  // for color change
+  document.getElementById("forInputName").addEventListener("click", () => {
+    document.getElementById("forInputName").style.borderBottomColor = "#d5a249";
+  });
+
+  document.getElementById("forInputEmail").addEventListener("click", () => {
+    document.getElementById("forInputEmail").style.borderBottomColor =
+      "#d5a249";
+  });
+
+  document.getElementById("forPassword").addEventListener("click", () => {
+    document.getElementById("forPassword").style.borderBottomColor = "#d5a249";
+  });
+
+  document.getElementById("optionalF").addEventListener("click", () => {
+    document.getElementById("optionalF").style.borderBottomColor = "#d5a249";
+  });
+
+  document.getElementById("forOtp").addEventListener("click", () => {
+    document.getElementById("forOtp").style.borderBottomColor = "#d5a249";
+  });
+
+  //
+  document.getElementById("sendOtp").addEventListener("click", () => {
+    let randomToDis = Math.floor(Math.random() * 200 + 1000);
+    let nameOFCx = document.getElementById("forInputName").value;
+    let obj = {
+      otp: randomToDis,
+      name: nameOFCx,
+    };
+    localStorage.setItem("randomN", JSON.stringify(obj));
+    console.log(randomToDis);
+    document.getElementById("forSignup1").style.display = "none";
+    document.getElementById("forSignup2").style.display = "block";
+    alert(randomToDis);
+  });
+
+  // CONFIRMING
+  document.getElementById("confirmOTP").addEventListener("click", () => {
+    let otpVerification = JSON.parse(localStorage.getItem("randomN"));
+
+    let customerOTP = document.getElementById("forOtp").value;
+    console.log(otpVerification.otp);
+    console.log(customerOTP);
+    if (otpVerification.otp == customerOTP) {
+      document.getElementById(
+        "displayCxName"
+      ).innerHTML = `Hi ${otpVerification.name}`;
+      document.getElementById("forSignup2").style.display = "none";
+    } else {
+      alert("OTP incorrect");
+    }
+  });
+
+  // cancle function for cross button
+  document.getElementById("loginClose2").addEventListener("click", () => {
+    document.getElementById("forSignup2").style.display = "none";
+  });
+>>>>>>> Stashed changes
 </script>
