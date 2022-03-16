@@ -19,3 +19,6 @@ about cloud storage so we had to create our data and store our data in local sto
 
 # Deployed Link - 
 https://serene-cray-865191.netlify.app/
+![aa](https://user-images.githubusercontent.com/91863686/158535659-aefa2954-ba33-4054-9ad4-4df2d1130b11.JPG)
+![bb](https://user-images.githubusercontent.com/91863686/158535691-0a640a02-0cf7-4a48-ba64-fb556e47947e.JPG)
+![cc](https://user-images.githubusercontent.com/91863686/158535723-a01a5a22-5b89-4a88-9dc8-10c02260c572.JPG)
